@@ -1,0 +1,11 @@
+paso,variable,problema,n,accion,justificacion
+1,(filas),Filas duplicadas,0,Eliminar,Un registro repetido sesga toda estadística posterior
+2,v01_tipoviv,Viviendas colectivas,26715,Filtrar 7-16,"Hoteles, cuarteles y cárceles no son hogares particulares"
+3,v02_condocup,Viviendas desocupadas,338146,"Filtrar 3,4,5",Sin hogar dentro: sus respuestas están vacías por diseño
+4,tot_pers,Sin habitantes,840062,Filtrar < 1,Una vivienda ocupada debe registrar personas
+5,"v18*, v19*",Código 9 = sin especificar,2595659,Convertir a NaN,"El diccionario lo define como faltante, no como categoría"
+6,v16_desague,Nulo estructural,734257,Categoría 0,La pregunta no aplica a quien no tiene baño
+7,tot_pers,Valores imposibles,972,A NaN e imputar,Exceden el máximo plausible de un hogar particular
+8,v14_dormit,Dormitorios > habitaciones,0,A NaN e imputar,Contradicción lógica entre dos preguntas del censo
+9,"v19e_inetfijo, v19f_inetmovil",Fuga de información,2,Excluir del modelo,Son los componentes con que el INE construyó v19e_f
+10,"i00, iprov, imun",Identificadores,3,Excluir del modelo,No aportan patrón: inducen memorización

@@ -1,0 +1,6 @@
+,Accuracy,Precision,Recall,F1
+KNN,0.61357,0.61144,0.61753,0.6136
+Naive Bayes gaussiano,0.5177,0.53336,0.54314,0.48213
+Naive Bayes categórico,0.61013,0.6119,0.61939,0.61066
+SVM lineal,0.62533,0.623,0.63298,0.62399
+SVM kernel RBF,0.62623,0.62676,0.63142,0.62762

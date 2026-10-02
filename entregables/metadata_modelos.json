@@ -1,0 +1,118 @@
+{
+  "proyecto": "Brecha digital y equipamiento del hogar · CPV 2024",
+  "fecha": "2026-09-30 14:45",
+  "version": "1.0",
+  "semilla": 42,
+  "dataset": {
+    "archivo": "vivienda_cpv2024_LIMPIO_v2.parquet",
+    "registros_totales": 3492019,
+    "registros_usados": 600000,
+    "predictoras": [
+      "urbrur",
+      "idep",
+      "v01_tipoviv",
+      "v03_pared",
+      "v04_revoq",
+      "v05_techo",
+      "v06_piso",
+      "v07_aguapro",
+      "v08_aguadist",
+      "v09_energia",
+      "v10_combus",
+      "v11_basura",
+      "v12_cocina",
+      "v13_habitac",
+      "v14_dormit",
+      "v15_servsan",
+      "v16_desague",
+      "v17_tenencia",
+      "tot_pers",
+      "tip_hog",
+      "v20a_emi",
+      "v20b_totemi",
+      "v21a_fal",
+      "v21b_totfal",
+      "hacinamiento",
+      "hacin_critico",
+      "sin_servicios",
+      "pers_por_habitac"
+    ],
+    "categoricas": [
+      "urbrur",
+      "idep",
+      "v01_tipoviv",
+      "v03_pared",
+      "v04_revoq",
+      "v05_techo",
+      "v06_piso",
+      "v07_aguapro",
+      "v08_aguadist",
+      "v09_energia",
+      "v10_combus",
+      "v11_basura",
+      "v12_cocina",
+      "v15_servsan",
+      "v16_desague",
+      "v17_tenencia",
+      "tip_hog",
+      "v20a_emi",
+      "v21a_fal"
+    ],
+    "numericas": [
+      "v13_habitac",
+      "v14_dormit",
+      "tot_pers",
+      "v20b_totemi",
+      "v21b_totfal",
+      "hacinamiento",
+      "pers_por_habitac",
+      "hacin_critico",
+      "sin_servicios"
+    ]
+  },
+  "modelo_clasificacion": {
+    "algoritmo": "RandomForestClassifier",
+    "objetivo": "internet",
+    "hiperparametros": {
+      "n_estimators": 120,
+      "max_depth": 18,
+      "min_samples_leaf": 50,
+      "max_features": "sqrt",
+      "class_weight": "balanced"
+    },
+    "metricas": {
+      "Accuracy": 0.74731,
+      "Precision": 0.90564,
+      "Recall": 0.74646,
+      "Recall_min": 0.75003,
+      "F1": 0.81838,
+      "ROC_AUC": 0.81965,
+      "PR_AUC": 0.92973
+    },
+    "validacion_cruzada": {
+      "auc_medio": 0.8098,
+      "auc_desv": 0.0023,
+      "k": 5
+    }
+  },
+  "modelo_regresion": {
+    "algoritmo": "CatBoost",
+    "objetivo": "ieh",
+    "metricas": {
+      "MAE": 1.46342,
+      "MSE": 3.46329,
+      "RMSE": 1.86099,
+      "R2": 0.56917,
+      "MAPE_%": 42.42054
+    },
+    "validacion_cruzada": {
+      "r2_medio": 0.5581,
+      "r2_desv": 0.0083,
+      "k": 5
+    }
+  },
+  "validacion_externa": {
+    "cobertura_propia_%": 76.27,
+    "cobertura_oficial_INE_%": 76.3
+  }
+}

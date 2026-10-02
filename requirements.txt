@@ -1,0 +1,22 @@
+# ---------------------------------------------------------------------------
+#  Dependencias de la aplicacion web del proyecto CPV 2024
+#  Instalacion:   pip install -r requirements.txt
+# ---------------------------------------------------------------------------
+
+# Interfaz y graficos
+streamlit>=1.30
+plotly>=5.18
+
+# Manejo de datos
+pandas>=2.0
+numpy>=1.24
+pyarrow>=14.0
+
+# Carga de los modelos entrenados
+joblib>=1.3
+scikit-learn>=1.4
+
+# Librerias requeridas por los modelos serializados
+xgboost>=2.0
+lightgbm>=4.0
+catboost>=1.2

@@ -1,0 +1,36 @@
+# ---------------------------------------------------------------------------
+#  Archivos excluidos de la publicacion del repositorio
+# ---------------------------------------------------------------------------
+
+# Conjuntos de datos: superan el limite de 100 MB por archivo.
+# El archivo original es publico y se descarga del portal del INE.
+Vivienda_CPV-2024.csv
+vivienda_cpv2024_LIMPIO_v2.csv
+vivienda_cpv2024_LIMPIO_v2.parquet
+Vivienda_CPV-2024_filtrado.parquet
+Vivienda_CPV-2024_filtrado_meta.csv
+Vivienda_CPV-2024_cache.parquet
+*.csv.gz
+
+# Entorno virtual
+.venv/
+venv/
+env/
+
+# Archivos temporales de Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Respaldos generados cuando la bitacora esta abierta en Excel
+BITACORA_respaldo_*.csv
+~$*.xlsx
+
+# Sistema operativo
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Configuracion local del editor
+.vscode/
+.idea/

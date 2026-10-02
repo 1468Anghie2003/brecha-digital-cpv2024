@@ -1,0 +1,162 @@
+===============================================================================
+  BRECHA DIGITAL Y EQUIPAMIENTO DEL HOGAR EN BOLIVIA
+  Censo de Poblacion y Vivienda 2024
+
+  INSTRUCCIONES PARA EJECUTAR LA APLICACION WEB
+
+  Universidad Mayor de San Andres - Carrera de Informatica
+  Materia: Machine Learning - Aprendizaje supervisado
+  Autores: Ethan Alba Orellana
+           Jhamil Lopez Salgueiro
+           Angela Luz Mamani Castro
+===============================================================================
+
+
+  LO PRIMERO: NO ES NECESARIO EJECUTAR EL PROYECTO COMPLETO
+-------------------------------------------------------------------------------
+
+  El procesamiento del censo ya fue ejecutado y sus resultados estan
+  guardados en la carpeta mlops/. La aplicacion unicamente los lee.
+
+  NO se requiere:
+     - el archivo original del censo (468 MB)
+     - el dataset limpio (401 MB)
+     - ejecutar las fases A a J del codigo
+
+  Solo se requiere instalar las librerias y lanzar la aplicacion.
+  Son dos comandos.
+
+
+  CONTENIDO DE ESTA CARPETA
+-------------------------------------------------------------------------------
+
+  app_mlops.py        Aplicacion web
+  mlops/              Modelos entrenados, metricas y datos agregados (26 MB)
+  requirements.txt    Lista de librerias necesarias
+  INSTRUCCIONES.txt   Este archivo
+  ejecutar_app.bat    Lanzador automatico para Windows
+
+
+  OPCION A - EJECUCION AUTOMATICA (Windows)
+-------------------------------------------------------------------------------
+
+  1. Doble clic sobre el archivo  ejecutar_app.bat
+
+     El lanzador verifica que Python este instalado, instala las librerias
+     que falten y abre la aplicacion en el navegador.
+
+     La primera vez puede tardar varios minutos, porque descarga las
+     librerias. Las siguientes veces abre en segundos.
+
+  2. Para cerrar la aplicacion: pulsar Ctrl + C en la ventana negra,
+     o simplemente cerrarla.
+
+
+  OPCION B - EJECUCION MANUAL (cualquier sistema)
+-------------------------------------------------------------------------------
+
+  1. Abrir una terminal dentro de esta carpeta.
+
+     En Windows: escribir  cmd  en la barra de direcciones del Explorador
+     de archivos, estando dentro de la carpeta, y pulsar Enter.
+
+  2. Instalar las librerias (una sola vez):
+
+        pip install -r requirements.txt
+
+  3. Lanzar la aplicacion:
+
+        streamlit run app_mlops.py
+
+  4. El navegador se abre solo en la direccion:
+
+        http://localhost:8501
+
+     Si no se abre, copiar esa direccion en el navegador.
+
+  5. Para detener la aplicacion: pulsar Ctrl + C en la terminal.
+
+
+  IMPORTANTE: NO EJECUTAR CON EL BOTON DE EJECUTAR DE VISUAL STUDIO CODE
+-------------------------------------------------------------------------------
+
+  Una aplicacion de Streamlit no se ejecuta como un script de Python
+  normal. Si se abre app_mlops.py en un editor y se pulsa el boton de
+  ejecutar, aparecera una pantalla de advertencias y la aplicacion no
+  funcionara.
+
+  Debe lanzarse siempre desde la terminal con:   streamlit run app_mlops.py
+
+
+  QUE SE PUEDE HACER EN LA APLICACION
+-------------------------------------------------------------------------------
+
+  Barra lateral
+     Selector de version del sistema. Al cambiarlo se recalculan todas
+     las metricas y todos los graficos de la aplicacion. Es la
+     demostracion del versionado de modelos.
+
+  Inicio
+     Indicadores generales del universo de 3.492.019 viviendas y
+     modelos ganadores de cada tarea.
+
+  Panorama del dataset
+     Explorador de las 28 variables predictoras. Permite elegir
+     cualquier variable y cruzarla con cualquiera de los cuatro
+     indicadores del proyecto. Incluye la matriz de correlacion.
+
+  Mapa de Bolivia
+     Los nueve departamentos con seis indicadores a elegir, en vista de
+     burbujas o de mapa de calor, con el ranking departamental.
+
+  Clasificacion
+     Comparacion de los cinco modelos finalistas para predecir el acceso
+     a internet. Al seleccionar un modelo se actualizan sus curvas ROC y
+     Precision-Recall, su matriz de confusion y sus variables mas
+     influyentes.
+
+  Regresion
+     Lo mismo para la estimacion del equipamiento del hogar.
+
+  Prediccion en vivo
+     Permite describir una vivienda y obtener su probabilidad estimada
+     de acceso a internet y su equipamiento esperado, eligiendo que
+     algoritmo realiza cada estimacion.
+
+  Objetivos adicionales
+     Hacinamiento critico y carencia de servicios basicos, con el
+     detalle del control de fuga de informacion aplicado.
+
+  MLOps y versionado
+     Registro de versiones, comparacion de metricas entre versiones y
+     medicion de la deriva geografica del modelo.
+
+
+  SI ALGO FALLA
+-------------------------------------------------------------------------------
+
+  "python no se reconoce como un comando"
+     Python no esta instalado o no esta en el PATH. Descargarlo de
+     python.org y marcar la casilla "Add Python to PATH" durante la
+     instalacion.
+
+  "No module named streamlit"
+     Falto el paso de instalacion. Ejecutar:
+        pip install -r requirements.txt
+
+  "Faltan los artefactos"
+     La carpeta mlops/ no esta junto a app_mlops.py. Ambos deben estar
+     en la misma carpeta.
+
+  Advertencias de version al cargar los modelos
+     Los modelos fueron serializados con las versiones indicadas en
+     requirements.txt. Con versiones distintas pueden aparecer
+     advertencias; la aplicacion sigue funcionando. Para evitarlas,
+     instalar las versiones exactas con:
+        pip install -r requirements_exacto.txt
+
+  El puerto 8501 esta ocupado
+     Lanzar en otro puerto:
+        streamlit run app_mlops.py --server.port 8502
+
+===============================================================================

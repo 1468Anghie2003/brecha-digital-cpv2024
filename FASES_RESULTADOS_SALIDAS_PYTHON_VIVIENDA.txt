@@ -1,0 +1,2227 @@
+══════════════════════════════════════════════════════════════════════════════════════
+  FASE A · ANALISIS DESCRIPTIVO PREVIO A LA LIMPIEZA
+══════════════════════════════════════════════════════════════════════════════════════
+   Archivo: Vivienda_CPV-2024.csv
+   Lectura correcta · sep=';' · encoding='latin-1'
+
+   Registros : 4,490,488
+   Variables : 48
+   Memoria   : 1,644.5 MB
+══════════════════════════════════════════════════════════════════════════════════════
+  A1 · RADIOGRAFIA GENERAL
+══════════════════════════════════════════════════════════════════════════════════════
+
+── Estructura de las variables ─────────────────────────────────────────────────────
+                   tipo  no_nulos    nulos  pct_nulos   unicos    moda cardinalidad
+idep              int64   4490488        0       0.00        9     2.0         Baja
+iprov             int64   4490488        0       0.00       20     1.0        Media
+imun              int64   4490488        0       0.00        8     1.0         Baja
+i00               int64   4490488        0       0.00  4490488  3001.0         Alta
+urbrur            int64   4490488        0       0.00        2     1.0      Binaria
+v01_tipoviv       int64   4490488        0       0.00       16     1.0        Media
+v02_condocup    float64   4463773    26715       0.59        6     1.0         Baja
+v03_pared       float64   3623711   866777      19.30        7     1.0         Baja
+v04_revoq       float64   3623711   866777      19.30        2     1.0      Binaria
+v05_techo       float64   3623711   866777      19.30        5     1.0         Baja
+v06_piso        float64   3623711   866777      19.30        9     5.0         Baja
+v07_aguapro     float64   3623711   866777      19.30        9     1.0         Baja
+v08_aguadist    float64   3623711   866777      19.30        3     1.0         Baja
+v09_energia     float64   3623711   866777      19.30        5     1.0         Baja
+v10_combus      float64   3623711   866777      19.30        8     1.0         Baja
+v11_basura      float64   3623711   866777      19.30        7     2.0         Baja
+v12_cocina      float64   3623711   866777      19.30        2     1.0      Binaria
+v13_habitac     float64   3623711   866777      19.30        8     1.0         Baja
+v14_dormit      float64   3623711   866777      19.30        9     1.0         Baja
+v15_servsan     float64   3623711   866777      19.30        3     1.0         Baja
+v16_desague     float64   2889454  1601034      35.65        6     1.0         Baja
+v17_tenencia    float64   3623711   866777      19.30        8     1.0         Baja
+v18a_bici       float64   3623711   866777      19.30        3     2.0         Baja
+v18b_moto       float64   3623711   866777      19.30        3     2.0         Baja
+v18c_auto       float64   3623711   866777      19.30        3     2.0         Baja
+v18d_carreta    float64   3623711   866777      19.30        3     2.0         Baja
+v18e_bote       float64   3623711   866777      19.30        3     2.0         Baja
+v18f_refri      float64   3623711   866777      19.30        3     1.0         Baja
+v18g_micro      float64   3623711   866777      19.30        3     2.0         Baja
+v18h_calefon    float64   3623711   866777      19.30        3     2.0         Baja
+v18i_aire       float64   3623711   866777      19.30        3     2.0         Baja
+v18j_lavadora   float64   3623711   866777      19.30        3     2.0         Baja
+v19a_radio      float64   3623711   866777      19.30        3     1.0         Baja
+v19b_tv         float64   3623711   866777      19.30        3     1.0         Baja
+v19c_compu      float64   3623711   866777      19.30        3     2.0         Baja
+v19d_celular    float64   3623711   866777      19.30        3     1.0         Baja
+v19e_inetfijo   float64   3623711   866777      19.30        3     2.0         Baja
+v19f_inetmovil  float64   3623711   866777      19.30        3     1.0         Baja
+v19g_tvcable    float64   3623711   866777      19.30        3     2.0         Baja
+v19h_telfijo    float64   3623711   866777      19.30        3     2.0         Baja
+v20a_emi        float64   3623711   866777      19.30        2     2.0      Binaria
+v20b_totemi     float64    303169  4187319      93.25       13     1.0        Media
+v21a_fal        float64   3623711   866777      19.30        2     2.0      Binaria
+v21b_totfal     float64    345482  4145006      92.31        9     1.0         Baja
+tot_pers          int64   4490488        0       0.00      312     1.0         Alta
+tip_hog         float64   3623711   866777      19.30        8     1.0         Baja
+v19e_f          float64   3623711   866777      19.30        3     1.0         Baja
+v19h_d          float64   3623711   866777      19.30        3     1.0         Baja
+
+── Distribución de la cardinalidad ─────────────────────────────────────────────────
+cardinalidad
+Baja       38
+Binaria     5
+Media       3
+Alta        2
+
+── Estadística descriptiva de las variables numéricas ──────────────────────────────
+                    count        mean         std     min         25%        50%         75%        max  asimetria   curtosis      rango   cv_%
+idep            4490488.0        4.09        2.22     1.0        2.00        3.0        7.00        9.0       0.41      -1.31        8.0   54.3
+iprov           4490488.0        4.62        4.64     1.0        1.00        2.0        8.00       20.0       1.06       0.04       19.0  100.4
+imun            4490488.0        2.04        1.54     1.0        1.00        1.0        3.00        8.0       1.29       0.44        7.0   75.2
+i00             4490488.0  2248244.50  1296292.37  3001.0  1125622.75  2248244.5  3370866.25  4493488.0      -0.00      -1.20  4490487.0   57.7
+urbrur          4490488.0        1.35        0.48     1.0        1.00        1.0        2.00        2.0       0.61      -1.62        1.0   35.3
+v01_tipoviv     4490488.0        1.50        1.33     1.0        1.00        1.0        1.00       16.0       5.08      41.26       15.0   88.6
+v02_condocup    4463773.0        1.36        0.93     0.0        1.00        1.0        1.00        5.0       2.95       8.03        5.0   68.4
+v03_pared       3623711.0        1.59        1.19     1.0        1.00        1.0        2.00        7.0       2.66       6.84        6.0   75.2
+v04_revoq       3623711.0        1.24        0.43     1.0        1.00        1.0        1.00        2.0       1.22      -0.50        1.0   34.4
+v05_techo       3623711.0        1.67        0.97     1.0        1.00        1.0        2.00        5.0       1.48       1.58        4.0   57.8
+v06_piso        3623711.0        3.78        1.75     1.0        3.00        4.0        5.00        9.0      -0.29      -0.29        8.0   46.2
+v07_aguapro     3623711.0        2.06        2.06     1.0        1.00        1.0        2.00        9.0       1.94       2.55        8.0  100.1
+v08_aguadist    3623711.0        1.64        0.82     1.0        1.00        1.0        2.00        3.0       0.76      -1.09        2.0   50.2
+v09_energia     3623711.0        1.48        1.26     1.0        1.00        1.0        1.00        5.0       2.33       3.59        4.0   85.0
+v10_combus      3623711.0        1.75        1.15     1.0        1.00        1.0        2.00        8.0       2.87      12.07        7.0   65.5
+v11_basura      3623711.0        2.88        1.66     1.0        2.00        2.0        5.00        7.0       0.61      -1.15        6.0   57.7
+v12_cocina      3623711.0        1.20        0.40     1.0        1.00        1.0        1.00        2.0       1.47       0.16        1.0   33.5
+v13_habitac     3623711.0        2.50        1.52     1.0        1.00        2.0        3.00        8.0       1.23       1.54        7.0   60.7
+v14_dormit      3623711.0        1.86        1.19     0.0        1.00        2.0        2.00        8.0       1.34       2.63        8.0   63.8
+v15_servsan     3623711.0        1.54        0.81     1.0        1.00        1.0        2.00        3.0       1.01      -0.71        2.0   52.4
+v16_desague     2889454.0        1.76        1.06     1.0        1.00        1.0        3.00        6.0       1.31       1.68        5.0   60.0
+v17_tenencia    3623711.0        1.98        1.62     1.0        1.00        1.0        3.00        8.0       1.77       2.85        7.0   81.8
+v18a_bici       3623711.0        1.89        1.43     1.0        1.00        2.0        2.00        9.0       4.18      18.24        8.0   76.0
+v18b_moto       3623711.0        2.03        1.39     1.0        2.00        2.0        2.00        9.0       4.32      19.16        8.0   68.6
+v18c_auto       3623711.0        1.96        1.42     1.0        1.00        2.0        2.00        9.0       4.21      18.40        8.0   72.6
+v18d_carreta    3623711.0        2.21        1.31     1.0        2.00        2.0        2.00        9.0       4.85      22.29        8.0   59.4
+v18e_bote       3623711.0        2.23        1.30     1.0        2.00        2.0        2.00        9.0       4.96      22.91        8.0   58.2
+v18f_refri      3623711.0        1.72        1.48     1.0        1.00        1.0        2.00        9.0       4.18      17.88        8.0   86.1
+v18g_micro      3623711.0        2.06        1.39     1.0        2.00        2.0        2.00        9.0       4.37      19.37        8.0   67.3
+v18h_calefon    3623711.0        2.17        1.33     1.0        2.00        2.0        2.00        9.0       4.69      21.31        8.0   61.4
+v18i_aire       3623711.0        2.18        1.33     1.0        2.00        2.0        2.00        9.0       4.74      21.59        8.0   60.8
+v18j_lavadora   3623711.0        1.99        1.41     1.0        1.00        2.0        2.00        9.0       4.25      18.60        8.0   70.9
+v19a_radio      3623711.0        1.61        1.50     1.0        1.00        1.0        2.00        9.0       4.25      18.10        8.0   93.0
+v19b_tv         3623711.0        1.57        1.51     1.0        1.00        1.0        2.00        9.0       4.31      18.38        8.0   96.2
+v19c_compu      3623711.0        1.92        1.45     1.0        1.00        2.0        2.00        9.0       4.13      17.59        8.0   75.6
+v19d_celular    3623711.0        1.38        1.51     1.0        1.00        1.0        1.00        9.0       4.69      20.75        8.0  109.1
+v19e_inetfijo   3623711.0        1.89        1.46     1.0        1.00        2.0        2.00        9.0       4.11      17.42        8.0   77.6
+v19f_inetmovil  3623711.0        1.60        1.51     1.0        1.00        1.0        2.00        9.0       4.25      18.03        8.0   94.5
+v19g_tvcable    3623711.0        2.04        1.41     1.0        2.00        2.0        2.00        9.0       4.26      18.46        8.0   69.4
+v19h_telfijo    3623711.0        2.18        1.35     1.0        2.00        2.0        2.00        9.0       4.61      20.57        8.0   62.2
+v20a_emi        3623711.0        1.92        0.28     1.0        2.00        2.0        2.00        2.0      -3.01       7.05        1.0   14.4
+v20b_totemi      303169.0        1.65        1.04     0.0        1.00        1.0        2.00       15.0       1.77       2.98       15.0   62.9
+v21a_fal        3623711.0        1.90        0.29     1.0        2.00        2.0        2.00        2.0      -2.76       5.60        1.0   15.4
+v21b_totfal      345482.0        1.11        0.35     0.0        1.00        1.0        1.00        8.0       3.83      19.47        8.0   31.8
+tot_pers        4490488.0        2.53        6.35     0.0        1.00        2.0        4.00     8645.0     729.66  857687.69     8645.0  250.7
+tip_hog         3623711.0        3.21        1.58     1.0        1.00        4.0        5.00        8.0      -0.18      -1.22        7.0   49.3
+v19e_f          3623711.0        1.52        1.51     1.0        1.00        1.0        2.00        9.0       4.38      18.81        8.0   99.5
+v19h_d          3623711.0        1.38        1.50     1.0        1.00        1.0        1.00        9.0       4.70      20.86        8.0  109.2
+
+── Variables con asimetría marcada (|skew| > 1) ────────────────────────────────────
+   Personas en el hogar         skew = +729.66  (cola a la derecha)
+   Tipo de vivienda             skew =   +5.08  (cola a la derecha)
+   v18e_bote                    skew =   +4.96  (cola a la derecha)
+   v18d_carreta                 skew =   +4.85  (cola a la derecha)
+   v18i_aire                    skew =   +4.74  (cola a la derecha)
+   v19h_d                       skew =   +4.70  (cola a la derecha)
+   v18h_calefon                 skew =   +4.69  (cola a la derecha)
+   v19d_celular                 skew =   +4.69  (cola a la derecha)
+   v19h_telfijo                 skew =   +4.61  (cola a la derecha)
+   v19e_f                       skew =   +4.38  (cola a la derecha)
+   v18g_micro                   skew =   +4.37  (cola a la derecha)
+   v18b_moto                    skew =   +4.32  (cola a la derecha)
+   v19b_tv                      skew =   +4.31  (cola a la derecha)
+   v19g_tvcable                 skew =   +4.26  (cola a la derecha)
+   v19f_inetmovil               skew =   +4.25  (cola a la derecha)
+   v19a_radio                   skew =   +4.25  (cola a la derecha)
+   v18j_lavadora                skew =   +4.25  (cola a la derecha)
+   v18c_auto                    skew =   +4.21  (cola a la derecha)
+   v18a_bici                    skew =   +4.18  (cola a la derecha)
+   v18f_refri                   skew =   +4.18  (cola a la derecha)
+   v19c_compu                   skew =   +4.13  (cola a la derecha)
+   v19e_inetfijo                skew =   +4.11  (cola a la derecha)
+   v21b_totfal                  skew =   +3.83  (cola a la derecha)
+   v20a_emi                     skew =   -3.01  (cola a la izquierda)
+   Condición de ocupación       skew =   +2.95  (cola a la derecha)
+   Combustible de cocina        skew =   +2.87  (cola a la derecha)
+   v21a_fal                     skew =   -2.76  (cola a la izquierda)
+   Material de pared            skew =   +2.66  (cola a la derecha)
+   Fuente de energía            skew =   +2.33  (cola a la derecha)
+   Procedencia del agua         skew =   +1.94  (cola a la derecha)
+   Tenencia de la vivienda      skew =   +1.77  (cola a la derecha)
+   v20b_totemi                  skew =   +1.77  (cola a la derecha)
+   Material de techo            skew =   +1.48  (cola a la derecha)
+   Tiene cocina                 skew =   +1.47  (cola a la derecha)
+   N° de dormitorios            skew =   +1.34  (cola a la derecha)
+   Tipo de desagüe              skew =   +1.31  (cola a la derecha)
+   imun                         skew =   +1.29  (cola a la derecha)
+   N° de habitaciones           skew =   +1.23  (cola a la derecha)
+   Pared revocada               skew =   +1.22  (cola a la derecha)
+   iprov                        skew =   +1.06  (cola a la derecha)
+   Servicio sanitario           skew =   +1.01  (cola a la derecha)
+
+══════════════════════════════════════════════════════════════════════════════════════
+  A2 · VARIABLES OBJETIVO EN ESTADO CRUDO
+══════════════════════════════════════════════════════════════════════════════════════
+
+── Objetivo 1 · internet (clasificación binaria) ───────────────────────────────────
+   1.0    Sí tiene            2,663,395  ( 59.31 %)
+   2.0    No tiene              828,624  ( 18.45 %)
+   9.0    Sin especificar       131,692  (  2.93 %)
+   nan    Nulo                  866,777  ( 19.30 %)
+
+   Válidos para modelar : 3,492,019
+   Proporción con internet: 76.27 %  (cifra oficial INE CPV-2024: 76,30 %)
+
+── Objetivo 2 · ieh (regresión) — índice de equipamiento del hogar ─────────────────
+   Bienes considerados : 13
+count    4490488.000
+mean           3.814
+std            3.228
+min            0.000
+25%            1.000
+50%            3.000
+75%            6.000
+max           13.000
+
+── Objetivo 3 · nivel_equip (clasificación multiclase) ─────────────────────────────
+   Cortes por terciles: Bajo ≤ 2 · Medio ≤ 5 · Alto > 5
+   Bajo      1,802,736  ( 40.15 %)
+   Medio     1,329,501  ( 29.61 %)
+   Alto      1,358,251  ( 30.25 %)
+
+── Variable derivada · hacinamiento (personas por dormitorio) ──────────────────────
+count    3623711.000
+mean           1.899
+std            1.347
+min            0.125
+25%            1.000
+50%            1.500
+75%            2.333
+max           25.000
+
+══════════════════════════════════════════════════════════════════════════════════════
+  A3 · DISTRIBUCIONES
+══════════════════════════════════════════════════════════════════════════════════════
+   [figura] figuras_v2\A01_distribuciones.png
+
+══════════════════════════════════════════════════════════════════════════════════════
+  A4 · VALORES ATIPICOS
+══════════════════════════════════════════════════════════════════════════════════════
+
+── Método del rango intercuartílico (RIC) y puntuación Z ───────────────────────────
+                     min   Q1  mediana    Q3     max   RIC  lim_inf  lim_sup  atip_leves  atip_extremos    z>3  pct_leves  pct_extremos
+variable                                                                                                                               
+tot_pers            0.00  1.0      2.0  4.00  8645.0  3.00     -3.5     8.50       43699           5208   1422       0.97          0.12
+v13_habitac         1.00  1.0      2.0  3.00     8.0  2.00     -2.0     6.00       84856              0  46794       1.89          0.00
+v14_dormit          0.00  1.0      2.0  2.00     8.0  1.00     -0.5     3.50      327038          42488  42488       7.28          0.95
+hacinamiento_crudo  0.12  1.0      1.5  2.33    25.0  1.33     -1.0     4.33      191206          41771  86913       4.26          0.93
+ieh_crudo           0.00  1.0      3.0  6.00    13.0  5.00     -6.5    13.50           0              0      0       0.00          0.00
+
+── Valores imposibles según el diccionario del INE ─────────────────────────────────
+   N° de habitaciones           rango [1, 8]  →  ✔ sin problemas
+   N° de dormitorios            rango [0, 8]  →  ✔ sin problemas
+   Área urbana/rural            rango [1, 2]  →  ✔ sin problemas
+   Personas en el hogar         rango [1, 30]  →  ✘ 841,034 fuera de rango
+   Servicio sanitario           rango [1, 3]  →  ✔ sin problemas
+   Tipo de desagüe              rango [1, 6]  →  ✔ sin problemas
+   Condición de ocupación       rango [0, 5]  →  ✔ sin problemas
+   Tipo de vivienda             rango [1, 16]  →  ✔ sin problemas
+   [figura] figuras_v2\A02_atipicos.png
+
+CRITERIO ADOPTADO
+   Un valor atípico solo se corrige si es IMPOSIBLE según el
+   diccionario. Los valores raros pero plausibles (un hogar de 12
+   personas) se conservan: representan justamente a la población
+   vulnerable que el proyecto busca identificar.
+
+══════════════════════════════════════════════════════════════════════════════════════
+  A5 · CALIDAD DE LOS DATOS
+══════════════════════════════════════════════════════════════════════════════════════
+
+── Duplicados ──────────────────────────────────────────────────────────────────────
+   Filas idénticas en todas las columnas : 0
+   Identificadores repetidos             : 0
+
+── Valores faltantes declarados (NaN) ──────────────────────────────────────────────
+   v20b_totemi                     4,187,319  ( 93.25 %)
+   v21b_totfal                     4,145,006  ( 92.31 %)
+   Tipo de desagüe                 1,601,034  ( 35.65 %)
+   internet_crudo                    998,469  ( 22.24 %)
+   Material de piso                  866,777  ( 19.30 %)
+   Procedencia del agua              866,777  ( 19.30 %)
+   Distribución de agua              866,777  ( 19.30 %)
+   Fuente de energía                 866,777  ( 19.30 %)
+   Material de pared                 866,777  ( 19.30 %)
+   Pared revocada                    866,777  ( 19.30 %)
+   Material de techo                 866,777  ( 19.30 %)
+   v19a_radio                        866,777  ( 19.30 %)
+   Tiene cocina                      866,777  ( 19.30 %)
+   Combustible de cocina             866,777  ( 19.30 %)
+   Manejo de basura                  866,777  ( 19.30 %)
+   Tenencia de la vivienda           866,777  ( 19.30 %)
+   N° de habitaciones                866,777  ( 19.30 %)
+   N° de dormitorios                 866,777  ( 19.30 %)
+   Servicio sanitario                866,777  ( 19.30 %)
+   v18d_carreta                      866,777  ( 19.30 %)
+   v18e_bote                         866,777  ( 19.30 %)
+   v18f_refri                        866,777  ( 19.30 %)
+   v18g_micro                        866,777  ( 19.30 %)
+   v18h_calefon                      866,777  ( 19.30 %)
+   v18a_bici                         866,777  ( 19.30 %)
+   v18b_moto                         866,777  ( 19.30 %)
+   v18c_auto                         866,777  ( 19.30 %)
+   v20a_emi                          866,777  ( 19.30 %)
+   v18j_lavadora                     866,777  ( 19.30 %)
+   v18i_aire                         866,777  ( 19.30 %)
+   v19b_tv                           866,777  ( 19.30 %)
+   v19f_inetmovil                    866,777  ( 19.30 %)
+   v19c_compu                        866,777  ( 19.30 %)
+   v19d_celular                      866,777  ( 19.30 %)
+   v19e_inetfijo                     866,777  ( 19.30 %)
+   Tipo de hogar                     866,777  ( 19.30 %)
+   v19h_telfijo                      866,777  ( 19.30 %)
+   v19g_tvcable                      866,777  ( 19.30 %)
+   v21a_fal                          866,777  ( 19.30 %)
+   v19h_d                            866,777  ( 19.30 %)
+   v19e_f                            866,777  ( 19.30 %)
+   hacinamiento_crudo                866,777  ( 19.30 %)
+   Condición de ocupación             26,715  (  0.59 %)
+
+── Faltantes CODIFICADOS — el valor 9 = 'Sin especificar' ──────────────────────────
+   Variables afectadas: 20 · Total de valores: 2,595,659
+   v19f_inetmovil                    132,064  (  2.94 %)
+   v19g_tvcable                      132,006  (  2.94 %)
+   v19h_telfijo                      131,979  (  2.94 %)
+   v19e_inetfijo                     131,905  (  2.94 %)
+   v19c_compu                        131,761  (  2.93 %)
+   v19d_celular                      131,693  (  2.93 %)
+   v19e_f                            131,692  (  2.93 %)
+   v19b_tv                           131,350  (  2.93 %)
+   v19h_d                            131,266  (  2.92 %)
+   v19a_radio                        130,629  (  2.91 %)
+
+── Faltante total real = NaN + código 9 ────────────────────────────────────────────
+                    nan   cod_9    total    pct
+v20b_totemi     4187319       0  4187319  93.25
+v21b_totfal     4145006       0  4145006  92.31
+v16_desague     1601034       0  1601034  35.65
+v19f_inetmovil   866777  132064   998841  22.24
+v19g_tvcable     866777  132006   998783  22.24
+v19h_telfijo     866777  131979   998756  22.24
+v19e_inetfijo    866777  131905   998682  22.24
+v19c_compu       866777  131761   998538  22.24
+v19d_celular     866777  131693   998470  22.24
+internet_crudo   998469       0   998469  22.24
+v19e_f           866777  131692   998469  22.24
+v19b_tv          866777  131350   998127  22.23
+v19h_d           866777  131266   998043  22.23
+v19a_radio       866777  130629   997406  22.21
+v18j_lavadora    866777  128331   995108  22.16
+
+── Problemas estructurales del universo ────────────────────────────────────────────
+   Viviendas DESOCUPADAS (v02 ∈ 3,4,5)      :    338,146  ( 7.53 %)
+   Viviendas COLECTIVAS (v01 ∈ 7..16)       :     26,715  ( 0.59 %)
+   Registros sin personas (tot_pers < 1)    :    840,062  (18.71 %)
+   Dormitorios > habitaciones (incoherencia):          0
+
+── Nulos ESTRUCTURALES — preguntas que no correspondía responder ───────────────────
+   v16_desague nulos totales        :  1,601,034
+   ... de ellos, hogares SIN baño   :    734,257
+   ... nulos reales (con baño)      :    866,777
+   → No son datos perdidos: la pregunta 16 solo se aplica a quien
+     declaró tener baño. Imputar la moda inventaría alcantarillado
+     a hogares que no tienen servicio sanitario.
+   [figura] figuras_v2\A03_calidad.png
+
+══════════════════════════════════════════════════════════════════════════════════════
+  A6 · ASOCIACION CON LAS VARIABLES OBJETIVO
+══════════════════════════════════════════════════════════════════════════════════════
+
+── Correlación de Pearson con cada objetivo ────────────────────────────────────────
+                    con internet  con equipamiento
+hacinamiento_crudo       -0.0128           -0.1138
+idep                      0.0587            0.0892
+tip_hog                   0.1755            0.2302
+tot_pers                  0.1471            0.1464
+urbrur                   -0.3764           -0.3551
+v01_tipoviv               0.0616           -0.0588
+v02_condocup              0.0156           -0.4642
+v03_pared                -0.2475           -0.3205
+v04_revoq                -0.2265           -0.3395
+v05_techo                -0.0037            0.0346
+v06_piso                  0.2618            0.2798
+v07_aguapro              -0.2245           -0.3079
+v08_aguadist             -0.2919           -0.4236
+v09_energia              -0.2977           -0.3768
+v10_combus               -0.1895           -0.2111
+v11_basura               -0.3497           -0.4458
+v12_cocina               -0.1349           -0.3125
+v13_habitac               0.1700            0.4121
+v14_dormit                0.2055            0.3977
+v15_servsan              -0.2841           -0.4336
+v16_desague              -0.2263           -0.2755
+v17_tenencia              0.1187            0.0344
+v20a_emi                 -0.0078           -0.0248
+v20b_totemi              -0.0223           -0.0398
+v21a_fal                 -0.0002           -0.0168
+v21b_totfal               0.0076            0.0045
+
+── Tasa de acceso a internet por categoría ─────────────────────────────────────────
+
+   ── Área urbana/rural
+         mean     size
+urbrur                
+1       87.71  2904054
+2       53.86  1586434
+
+   ── Material de piso
+           mean     size
+v06_piso                
+1.0       47.93   800688
+2.0       72.98    78967
+3.0       91.45   204990
+4.0       90.76  1014353
+5.0       79.26  1322225
+6.0       88.03    51556
+7.0       73.84    92234
+8.0       92.01    35181
+9.0       66.49    23517
+
+   ── Fuente de energía
+              mean     size
+v09_energia                
+1.0          81.35  3130729
+2.0          46.63    28409
+3.0          46.72    60548
+4.0          54.64    22891
+5.0          41.89   381134
+
+   ── Servicio sanitario
+              mean     size
+v15_servsan                
+1.0          82.87  2390728
+2.0          83.63   498726
+3.0          49.48   734257
+   [figura] figuras_v2\A04_asociaciones.png
+
+══════════════════════════════════════════════════════════════════════════════════════
+  A7 · DECISIONES PROPUESTAS PARA LA LIMPIEZA
+══════════════════════════════════════════════════════════════════════════════════════
+ paso                      variable                   problema       n             accion                                             justificacion
+    1                       (filas)           Filas duplicadas       0           Eliminar     Un registro repetido sesga toda estadística posterior
+    2                   v01_tipoviv       Viviendas colectivas   26715       Filtrar 7-16 Hoteles, cuarteles y cárceles no son hogares particulares
+    3                  v02_condocup      Viviendas desocupadas  338146      Filtrar 3,4,5  Sin hogar dentro: sus respuestas están vacías por diseño
+    4                      tot_pers             Sin habitantes  840062        Filtrar < 1              Una vivienda ocupada debe registrar personas
+    5                    v18*, v19* Código 9 = sin especificar 2595659    Convertir a NaN El diccionario lo define como faltante, no como categoría
+    6                   v16_desague           Nulo estructural  734257        Categoría 0               La pregunta no aplica a quien no tiene baño
+    7                      tot_pers         Valores imposibles     972    A NaN e imputar        Exceden el máximo plausible de un hogar particular
+    8                    v14_dormit Dormitorios > habitaciones       0    A NaN e imputar        Contradicción lógica entre dos preguntas del censo
+    9 v19e_inetfijo, v19f_inetmovil        Fuga de información       2 Excluir del modelo       Son los componentes con que el INE construyó v19e_f
+   10              i00, iprov, imun            Identificadores       3 Excluir del modelo                   No aportan patrón: inducen memorización
+
+   Guardado: figuras_v2/A_decisiones_propuestas.csv
+
+══════════════════════════════════════════════════════════════════════════════════════
+  RESUMEN EJECUTIVO DE LA FASE A
+══════════════════════════════════════════════════════════════════════════════════════
+
+   UNIVERSO
+     Registros analizados        : 4,490,488
+     Variables                   : 48
+     Filas completamente limpias : 0.86 %
+
+   OBJETIVOS DEFINIDOS
+     1. internet      → clasificación binaria  (tiene / no tiene)
+     2. ieh           → regresión continua     (0 a 13 bienes)
+     3. nivel_equip   → clasificación multiclase (Bajo / Medio / Alto)
+
+   CALIDAD
+     Faltantes declarados        : 43,896,069
+     Faltantes codificados con 9 : 2,595,659
+     Registros a filtrar         : 364,861 aprox.
+     Retención estimada          : 91.9 %
+
+   SEÑAL DETECTADA
+     Correlación más fuerte con internet    : urbrur (-0.376)
+     Correlación más fuerte con equipamiento: v02_condocup (-0.464)
+
+   SIGUIENTE PASO
+     Revisar la tabla de decisiones y ejecutar la FASE B (limpieza).
+
+
+
+
+
+
+
+
+
+
+══════════════════════════════════════════════════════════════════════════════════════
+  FASE B · LIMPIEZA Y TRATAMIENTO DE FALTANTES
+══════════════════════════════════════════════════════════════════════════════════════
+   Archivo   : c:\Users\HP\Desktop\ProyApSup255\Vivienda_CPV-2024.csv
+   Tamaño    : 468.1 MB en disco
+   Detectando formato con una muestra de 2.000 filas...
+   ✔ Formato · sep=';' · encoding='latin-1' · 48 columnas
+   Leyendo en lotes de 400,000 filas...
+     lote   3  ·  leídas  1,200,000  ·  conservadas    943,891  ·   12.0 s
+     lote   5  ·  leídas  2,000,000  ·  conservadas  1,584,929  ·   19.9 s
+     lote   6  ·  leídas  2,400,000  ·  conservadas  1,906,229  ·   23.7 s
+     lote   8  ·  leídas  3,200,000  ·  conservadas  2,520,323  ·   31.9 s
+     lote   9  ·  leídas  3,600,000  ·  conservadas  2,852,963  ·   36.0 s
+     lote  10  ·  leídas  4,000,000  ·  conservadas  3,201,378  ·   40.6 s
+     lote  12  ·  leídas  4,490,488  ·  conservadas  3,623,711  ·   44.9 s
+
+   ✔ Lectura completa en 48.1 s
+   Filas leídas del archivo : 4,490,488
+   Filas conservadas        : 3,623,711 (80.70 %)
+   Memoria en RAM           : 649.7 MB
+   Caché creada: Vivienda_CPV-2024_filtrado.parquet (40.2 MB)
+   Las próximas corridas cargarán en segundos.
+
+   Registros en el archivo original : 4,490,488
+   Registros tras el filtro inicial  : 3,623,711
+   Variables                         : 47
+
+  [01] Filtro de viviendas particulares
+       Problema   : Códigos 7-16: hoteles, hospitales, cuarteles, cárceles, calle
+       Acción     : Conservar solo 1-6 (aplicado durante la lectura por trozos)
+       Justifica  : No son hogares particulares; el INE los excluye de sus indicadores de vivienda
+       Afectados  : 26,715  ·  filas 4,490,488 → 4,463,773 (−26,715)
+
+  [02] Filtro de viviendas ocupadas
+       Problema   : Códigos 3,4,5: para alquilar, en construcción, abandonada
+       Acción     : Conservar solo 0,1,2 (aplicado durante la lectura por trozos)
+       Justifica  : Una vivienda desocupada no alberga hogar: no puede tener internet ni bienes. Sus campos están vacíos por diseño del cuestionario
+       Afectados  : 338,146  ·  filas 4,463,773 → 4,125,627 (−338,146)
+
+  [03] Viviendas con habitantes
+       Problema   : Registros con cero personas pese a figurar como ocupadas
+       Acción     : Conservar tot_pers ≥ 1 (aplicado durante la lectura por trozos)
+       Justifica  : Coherencia con la condición de ocupación; sin habitantes no hay hogar que caracterizar
+       Afectados  : 840,062  ·  filas 4,125,627 → 3,623,711 (−501,916)
+
+── Verificación del hallazgo sobre los nulos estructurales ─────────────────────────
+   Variables con nulos tras el filtro: 3 de 47
+     v20b_totemi                   3,320,542  ( 91.63 %)
+     v21b_totfal                   3,278,229  ( 90.47 %)
+     Tipo de desagüe                 734,257  ( 20.26 %)
+
+   Los nulos masivos de las variables del hogar desaparecieron sin
+   imputar un solo valor: eran estructurales, correspondían a las
+   viviendas que nunca fueron encuestadas sobre su contenido.
+
+   ✔ Bloque B0 completado en 77.1 s
+
+   IMPORTANTE: los bloques B1 y B2 del archivo anterior ya NO se
+   ejecutan, porque sus filtros se aplicaron aquí. Continúa en B3.
+
+
+══════════════════════════════════════════════════════════════════════════════════════
+  B3 · RECODIFICACION DEL CODIGO 9
+══════════════════════════════════════════════════════════════════════════════════════
+
+── Distribución del código 9 tras delimitar el universo ────────────────────────────
+   v19f_inetmovil           132,064  ( 3.64 %)
+   v19g_tvcable             132,006  ( 3.64 %)
+   v19h_telfijo             131,979  ( 3.64 %)
+   v19e_inetfijo            131,905  ( 3.64 %)
+   v19c_compu               131,761  ( 3.64 %)
+   v19d_celular             131,693  ( 3.63 %)
+   v19e_f                   131,692  ( 3.63 %)
+   v19b_tv                  131,350  ( 3.62 %)
+   v19h_d                   131,266  ( 3.62 %)
+   v19a_radio               130,629  ( 3.60 %)
+   v18j_lavadora            128,331  ( 3.54 %)
+   v18i_aire                128,323  ( 3.54 %)
+   v18h_calefon             128,318  ( 3.54 %)
+   v18f_refri               128,296  ( 3.54 %)
+   v18g_micro               128,253  ( 3.54 %)
+   v18e_bote                128,230  ( 3.54 %)
+   v18d_carreta             128,064  ( 3.53 %)
+   v18c_auto                127,796  ( 3.53 %)
+   v18b_moto                127,410  ( 3.52 %)
+   v18a_bici                126,293  ( 3.49 %)
+
+  [04] Código 9 → NaN
+       Problema   : El valor 9 aparece como si fuera una categoría más
+       Acción     : Convertir a NaN
+       Justifica  : El diccionario del INE lo define como 'Sin especificar': es un faltante codificado. Tratarlo como categoría haría que el modelo aprenda un patrón inexistente
+       Afectados  : 2,595,659
+
+  [05] Eliminación de registros sin variable objetivo
+       Problema   : Sin dato de acceso a internet tras recodificar el 9
+       Acción     : Eliminar la fila
+       Justifica  : No se puede imputar aquello que el modelo debe aprender a predecir: generaría etiquetas sintéticas y una evaluación falsa
+       Afectados  : 131,692  ·  filas 3,623,711 → 3,492,019 (−131,692)
+
+
+══════════════════════════════════════════════════════════════════════════════════════
+  B4 · NULOS ESTRUCTURALES
+══════════════════════════════════════════════════════════════════════════════════════
+
+── v16_desague — pregunta condicionada a la 15 ─────────────────────────────────────
+   Nulos totales                    : 700,816
+   ... de hogares SIN baño          : 700,816
+   ... de hogares CON baño (reales) : 0
+
+  [06] v16_desague → categoría 0
+       Problema   : Vacío en hogares que declararon no tener baño ni letrina
+       Acción     : Crear la categoría 0 = 'No tiene baño / no aplica'
+       Justifica  : La pregunta 16 solo se formula a quien respondió sí en la 15. Imputar la moda asignaría alcantarillado a los hogares más precarios, invirtiendo el sentido de la variable
+       Afectados  : 700,816
+
+── v20b_totemi y v21b_totfal — conteos condicionados ───────────────────────────────
+
+   v20b_totemi
+     Nulos totales              : 3,200,203
+     ... con v20a_emi = 'No'      : 3,200,203
+     ... reales (sí hubo)       : 0
+
+  [07] v20b_totemi → 0
+       Problema   : Vacío en hogares que declararon no haber tenido emigrantes
+       Acción     : Asignar el valor 0
+       Justifica  : El vacío significa ausencia de emigrantes, no dato perdido. Imputar la mediana inventaría emigrantes inexistentes
+       Afectados  : 3,200,203
+
+   v21b_totfal
+     Nulos totales              : 3,156,354
+     ... con v21a_fal = 'No'      : 3,156,354
+     ... reales (sí hubo)       : 0
+
+  [08] v21b_totfal → 0
+       Problema   : Vacío en hogares que declararon no haber tenido fallecimientos
+       Acción     : Asignar el valor 0
+       Justifica  : El vacío significa ausencia de fallecimientos, no dato perdido. Imputar la mediana inventaría fallecimientos inexistentes
+       Afectados  : 3,156,354
+
+
+══════════════════════════════════════════════════════════════════════════════════════
+  B5 · VALIDACION DE RANGOS
+══════════════════════════════════════════════════════════════════════════════════════
+
+── Contraste de cada variable contra su rango declarado ────────────────────────────
+   N° de habitaciones         [1,8]  ✔ correcto
+   N° de dormitorios          [0,8]  ✔ correcto
+   Área urbana/rural          [1,2]  ✔ correcto
+   Servicio sanitario         [1,3]  ✔ correcto
+   Tipo de desagüe            [0,6]  ✔ correcto
+   Tenencia de la vivienda    [1,8]  ✔ correcto
+   Material de pared          [1,7]  ✔ correcto
+   Material de techo          [1,5]  ✔ correcto
+   Material de piso           [1,9]  ✔ correcto
+   Procedencia del agua       [1,9]  ✔ correcto
+   Fuente de energía          [1,5]  ✔ correcto
+   Combustible de cocina      [1,8]  ✔ correcto
+   Manejo de basura           [1,7]  ✔ correcto
+   Tipo de hogar              [1,8]  ✔ correcto
+   Personas en el hogar       [1,30]  ✔ correcto
+
+  [09] Validación de rangos
+       Problema   : Valores fuera del rango declarado en el diccionario del INE
+       Acción     : Convertir a NaN para imputación posterior
+       Justifica  : Un valor imposible es un error de captura, no un caso extremo legítimo. Se marca como faltante en lugar de eliminar la fila completa, preservando el resto de la información del registro
+       Afectados  : 0
+
+── Coherencia entre variables relacionadas ─────────────────────────────────────────
+   Dormitorios > habitaciones : 0
+   ✔ Sin contradicciones
+
+── Valores atípicos legítimos — decisión de NO eliminar ────────────────────────────
+   Hogares con más de 12 personas: 4,854 (0.139 %)
+   DECISION: se CONSERVAN. Son hogares numerosos reales, no errores.
+   Eliminarlos sesgaría el modelo contra la población de mayor
+   vulnerabilidad, que es justamente la que el proyecto busca
+   identificar. Solo se anularon los valores IMPOSIBLES (>30).
+
+  [10] Valores atípicos legítimos
+       Problema   : Hogares numerosos detectados por el método del RIC
+       Acción     : CONSERVAR sin modificación
+       Justifica  : Un valor raro no es un error. Los hogares numerosos son reales y constituyen población objetivo del estudio; eliminarlos introduciría sesgo de selección
+       Afectados  : 4,854
+
+
+══════════════════════════════════════════════════════════════════════════════════════
+  B6 · EXPERIMENTO COMPARATIVO DE IMPUTACION
+══════════════════════════════════════════════════════════════════════════════════════
+
+   Variables que requieren imputación : 19
+   Valores faltantes a imputar        : 7,812
+   Muestra de prueba (sin faltantes)  : 12,000 registros
+   Valores enmascarados artificialmente: 8,967
+
+── Métodos evaluados ───────────────────────────────────────────────────────────────
+   1 · Moda global                    acierto  81.52 %  (0.1 s)
+   2 · Hot-deck por estrato           acierto  81.72 %  (0.1 s)
+   3 · KNN (k=5)                      acierto  82.23 %  (10.1 s)
+   4 · Iterativa (MICE)               acierto  83.90 %  (1.4 s)
+   5 · Modelo predictivo (RF)         acierto  83.56 %  (2.3 s)
+
+── Resultado del experimento ───────────────────────────────────────────────────────
+                            acierto_%  segundos  proyeccion_min
+4 · Iterativa (MICE)           83.897     1.429             6.9
+5 · Modelo predictivo (RF)     83.562     2.304            11.2
+3 · KNN (k=5)                  82.235    10.103            49.0
+2 · Hot-deck por estrato       81.722     0.082             0.4
+1 · Moda global                81.521     0.125             0.6
+
+   MÉTODO SELECCIONADO: 4 · Iterativa (MICE)
+   Acierto: 83.90 %  ·  Proyección sobre el dataset completo: 6.9 min
+   [figura] figuras_v2\B01_experimento_imputacion.png
+
+
+══════════════════════════════════════════════════════════════════════════════════════
+  B7 · IMPUTACION DEL DATASET COMPLETO
+══════════════════════════════════════════════════════════════════════════════════════
+
+── Método aplicado: hot-deck por estrato (área × departamento) ─────────────────────
+   Tiempo: 13.9 s
+
+  [11] Imputación de variables de bienes y TIC
+       Problema   : Faltantes procedentes del código 9 'Sin especificar'
+       Acción     : Hot-deck por estrato área × departamento
+       Justifica  : Seleccionado experimentalmente: recupera el 81.7 % de los valores enmascarados y preserva la estructura territorial. KNN y MICE son inviables sobre millones de registros
+       Afectados  : 7,812
+
+── Imputación de las variables estructurales restantes ─────────────────────────────
+   No quedaban faltantes residuales.
+
+   NULOS RESTANTES EN TODO EL DATASET: 0
+
+══════════════════════════════════════════════════════════════════════════════════════
+  B8 · CONSTRUCCION DE LAS VARIABLES OBJETIVO
+══════════════════════════════════════════════════════════════════════════════════════
+
+── Objetivo 1 · internet (binaria) ─────────────────────────────────────────────────
+   Con internet :  2,663,395  (76.27 %)
+   Sin internet :    828,624  (23.73 %)
+
+   VALIDACION EXTERNA
+   Resultado propio : 76.27 %
+   Cifra oficial INE: 76.30 %
+   Diferencia       : 0.03 puntos
+   ✔ La limpieza reproduce el universo oficial del INE
+
+── Objetivo 2 · ieh (regresión, 0 a 13) ────────────────────────────────────────────
+count    3492019.000
+mean           4.905
+std            2.837
+min            0.000
+25%            3.000
+50%            5.000
+75%            7.000
+max           13.000
+
+   Urbana : 5.86 bienes
+   Rural  : 3.04 bienes
+   Brecha : 2.81
+
+── Objetivo 3 · nivel_equip (multiclase) ───────────────────────────────────────────
+   Cortes por terciles: Bajo ≤ 3 · Medio ≤ 6 · Alto > 6
+nivel_equip
+Bajo     1265180
+Medio    1227436
+Alto      999403
+
+── Variables derivadas construidas ─────────────────────────────────────────────────
+   hacinamiento         personas por dormitorio                    media = 1.901
+   hacin_critico        más de 3 personas por dormitorio           media = 0.119
+   sin_servicios        carece de agua, energía o saneamiento      media = 0.274
+   pers_por_habitac     personas por habitación                    media = 1.554
+
+  [12] Variables derivadas
+       Problema   : El dataset no incluye indicadores compuestos
+       Acción     : Construir internet, ieh, nivel_equip, hacinamiento y sin_servicios
+       Justifica  : Los objetivos de modelado no existen como columnas: deben derivarse del cuestionario. El índice de equipamiento sigue el criterio del índice de riqueza de las encuestas DHS
+       Afectados  : 5
+
+── Control de fuga de información (data leakage) ───────────────────────────────────
+   ✘ v19e_inetfijo      componente directo de la variable objetivo
+   ✘ v19f_inetmovil     componente directo de la variable objetivo
+   ✘ v19e_f             componente directo de la variable objetivo
+   ✘ v19h_d             componente directo de la variable objetivo
+   ✘ i00, iprov, imun   identificadores sin poder explicativo
+   ✘ v18*, v19* (bienes) componentes del índice ieh
+
+  [13] Exclusión por fuga de información
+       Problema   : Variables que contienen la respuesta que el modelo debe predecir
+       Acción     : Marcar como excluidas del conjunto de predictoras
+       Justifica  : v19e_f se construye a partir de inetfijo e inetmovil; los bienes componen el ieh. Usarlos como predictores daría una precisión artificialmente perfecta sin valor predictivo real
+       Afectados  : 7
+
+   Predictoras finales: 28
+
+
+
+══════════════════════════════════════════════════════════════════════════════════════
+  B9 · CIERRE DE LA FASE B
+══════════════════════════════════════════════════════════════════════════════════════
+
+── Verificaciones de integridad ────────────────────────────────────────────────────
+   ✔ Sin valores nulos                  0 nulos
+   ✔ Duplicados admisibles              588,923 filas idénticas (hogares con iguales características)
+   ✔ Objetivo binario correcto          valores [np.int64(0), np.int64(1)]
+   ✔ ieh en rango                       [0, 13]
+   ✔ Cobertura coincide con el INE      76.27 % frente a 76,30 % oficial
+
+── Balance del proceso ─────────────────────────────────────────────────────────────
+   Registros originales                           4,490,488    100.00 %
+   − Filtro de viviendas particulares               -26,715      0.59 %
+   − Filtro de viviendas ocupadas                  -338,146      7.53 %
+   − Viviendas con habitantes                      -501,916     11.18 %
+   − Eliminación de registros sin variable ob      -131,692      2.93 %
+   Dataset limpio                                 3,492,019     77.76 %
+
+   Valores imputados (no eliminados): 11,002,325
+   Pasos registrados en la bitácora  : 13
+   [figura] figuras_v2\B02_resultado_limpieza.png
+
+
+── Archivos generados ──────────────────────────────────────────────────────────────
+   ✔ vivienda_cpv2024_LIMPIO_v2.csv        400.9 MB
+   ✔ vivienda_cpv2024_LIMPIO_v2.parquet    32.0 MB  (carga rápida)
+   ✔ figuras_v2/B_bitacora_limpieza.csv   (13 pasos)
+
+   El archivo original NO fue modificado.
+   Tiempo total de la fase: 10.7 min
+
+══════════════════════════════════════════════════════════════════════════════════════
+  RESUMEN DE LA FASE B
+══════════════════════════════════════════════════════════════════════════════════════
+
+   UNIVERSO FINAL
+     Viviendas particulares ocupadas con habitantes : 3,492,019
+     Retención sobre el original                    : 77.76 %
+     Predictoras                                    : 28
+     Nulos restantes                                : 0
+
+   TRES OBJETIVOS LISTOS
+     internet     → clasificación binaria   (76.27 % / 23.73 %)
+     ieh          → regresión continua      (media 4.91 de 13)
+     nivel_equip  → clasificación multiclase (3 clases)
+
+   HALLAZGO METODOLOGICO
+     Los nulos masivos eran ESTRUCTURALES: correspondían a viviendas nunca
+     encuestadas sobre el hogar. Se resolvieron delimitando el universo, sin
+     imputar un solo valor. Solo se imputaron los faltantes procedentes del
+     código 9, y el método se eligió mediante un experimento controlado.
+
+   SIGUIENTE PASO
+     FASE C · análisis descriptivo del dataset limpio y comparación
+     antes/después para cuantificar el efecto de la limpieza.
+
+
+
+
+
+
+
+
+
+
+
+══════════════════════════════════════════════════════════════════════════════════════
+  FASE C · ANALISIS DESCRIPTIVO DEL DATASET LIMPIO
+══════════════════════════════════════════════════════════════════════════════════════
+   Cargado desde Parquet (formato liviano)
+   Registros : 3,492,019
+   Variables : 31
+   Memoria   : 363.0 MB
+   Muestra para gráficos de dispersión: 250,000 (random_state=42)
+══════════════════════════════════════════════════════════════════════════════════════
+  C1 · ESTADISTICA DESCRIPTIVA POST-LIMPIEZA
+══════════════════════════════════════════════════════════════════════════════════════
+
+── Resumen de las variables ────────────────────────────────────────────────────────
+                      tipo  nulos  unicos
+urbrur             float32      0       2
+idep               float32      0       9
+v01_tipoviv        float32      0       6
+v03_pared          float32      0       7
+v04_revoq          float32      0       2
+v05_techo          float32      0       5
+v06_piso           float32      0       9
+v07_aguapro        float32      0       9
+v08_aguadist       float32      0       3
+v09_energia        float32      0       5
+v10_combus         float32      0       8
+v11_basura         float32      0       7
+v12_cocina         float32      0       2
+v13_habitac        float32      0       8
+v14_dormit         float32      0       9
+v15_servsan        float32      0       3
+v16_desague        float32      0       7
+v17_tenencia       float32      0       8
+tot_pers           float32      0      25
+tip_hog            float32      0       8
+v20a_emi           float32      0       2
+v20b_totemi        float32      0      13
+v21a_fal           float32      0       2
+v21b_totfal        float32      0       9
+hacinamiento       float32      0     129
+hacin_critico         int8      0       2
+sin_servicios         int8      0       2
+pers_por_habitac   float32      0     130
+internet              int8      0       2
+ieh                   int8      0      14
+nivel_equip       category      0       3
+
+── Estadísticos de las variables numéricas ─────────────────────────────────────────
+                      count   mean    std    min  25%  50%    75%   max  asimetria  curtosis   cv_%
+urbrur            3492019.0  1.338  0.473  1.000  1.0  1.0  2.000   2.0      0.685    -1.530   35.4
+idep              3492019.0  4.139  2.240  1.000  2.0  3.0  7.000   9.0      0.377    -1.371   54.1
+v01_tipoviv       3492019.0  1.440  1.006  1.000  1.0  1.0  1.000   6.0      2.139     3.365   69.9
+v03_pared         3492019.0  1.580  1.181  1.000  1.0  1.0  2.000   7.0      2.678     6.964   74.8
+v04_revoq         3492019.0  1.236  0.425  1.000  1.0  1.0  1.000   2.0      1.241    -0.460   34.4
+v05_techo         3492019.0  1.668  0.961  1.000  1.0  1.0  2.000   5.0      1.473     1.574   57.7
+v06_piso          3492019.0  3.785  1.737  1.000  3.0  4.0  5.000   9.0     -0.307    -0.281   45.9
+v07_aguapro       3492019.0  2.046  2.050  1.000  1.0  1.0  2.000   9.0      1.958     2.630  100.2
+v08_aguadist      3492019.0  1.629  0.818  1.000  1.0  1.0  2.000   3.0      0.777    -1.067   50.2
+v09_energia       3492019.0  1.473  1.249  1.000  1.0  1.0  1.000   5.0      2.364     3.736   84.8
+v10_combus        3492019.0  1.745  1.136  1.000  1.0  1.0  2.000   8.0      2.873    12.243   65.1
+v11_basura        3492019.0  2.869  1.658  1.000  2.0  2.0  5.000   7.0      0.620    -1.133   57.8
+v12_cocina        3492019.0  1.199  0.399  1.000  1.0  1.0  1.000   2.0      1.507     0.272   33.3
+v13_habitac       3492019.0  2.505  1.518  1.000  1.0  2.0  3.000   8.0      1.222     1.520   60.6
+v14_dormit        3492019.0  1.860  1.181  0.000  1.0  2.0  2.000   8.0      1.327     2.566   63.5
+v15_servsan       3492019.0  1.539  0.806  1.000  1.0  1.0  2.000   3.0      1.024    -0.686   52.4
+v16_desague       3492019.0  1.420  1.186  0.000  1.0  1.0  2.000   6.0      0.985     0.995   83.5
+v17_tenencia      3492019.0  1.980  1.614  1.000  1.0  1.0  3.000   8.0      1.761     2.815   81.5
+tot_pers          3492019.0  3.080  1.946  1.000  1.0  3.0  4.000  25.0      1.219     2.782   63.2
+tip_hog           3492019.0  3.213  1.576  1.000  1.0  4.0  5.000   8.0     -0.190    -1.213   49.1
+v20a_emi          3492019.0  1.916  0.277  1.000  2.0  2.0  2.000   2.0     -3.010     7.063   14.4
+v20b_totemi       3492019.0  0.138  0.547  0.000  0.0  0.0  0.000  15.0      5.271    33.462  396.1
+v21a_fal          3492019.0  1.904  0.295  1.000  2.0  2.0  2.000   2.0     -2.741     5.512   15.5
+v21b_totfal       3492019.0  0.106  0.344  0.000  0.0  0.0  0.000   8.0      3.606    15.877  323.3
+hacinamiento      3492019.0  1.901  1.342  0.125  1.0  1.5  2.333  25.0      1.973     6.455   70.6
+hacin_critico     3492019.0  0.119  0.324  0.000  0.0  0.0  0.000   1.0      2.349     3.516  271.7
+sin_servicios     3492019.0  0.274  0.446  0.000  0.0  0.0  1.000   1.0      1.011    -0.978  162.6
+pers_por_habitac  3492019.0  1.554  1.229  0.125  0.8  1.0  2.000  25.0      2.191     7.999   79.1
+internet          3492019.0  0.763  0.425  0.000  1.0  1.0  1.000   1.0     -1.235    -0.475   55.8
+ieh               3492019.0  4.905  2.837  0.000  3.0  5.0  7.000  13.0      0.410    -0.585   57.8
+
+── Comparación de la asimetría antes y después de la limpieza ──────────────────────
+   La Fase A registró en tot_pers una asimetría de +729,66 y una
+   curtosis de 857.687, ambas causadas por los registros con valor
+   cero de las viviendas desocupadas y por los valores imposibles.
+
+   tot_pers ahora  →  asimetría +1.219   ·   curtosis +2.782
+   Rango           →  [1, 25] personas
+
+   La distribución pasó de estar dominada por artefactos a reflejar
+   la composición real de los hogares bolivianos.
+
+── Integridad del dataset ──────────────────────────────────────────────────────────
+   Nulos totales              : 0
+   Variables con algún nulo   : 0
+   Filas completas            : 100.00 %
+   Duplicados exactos         : 588,923
+   Los duplicados son admisibles: dos hogares pueden compartir todas
+   sus características sin que ello implique un error de registro.
+
+══════════════════════════════════════════════════════════════════════════════════════
+  C2 · CARACTERIZACION DE LOS OBJETIVOS
+══════════════════════════════════════════════════════════════════════════════════════
+
+── Objetivo 1 · internet — clasificación binaria ───────────────────────────────────
+   Con internet :  2,663,395  (76.27 %)
+   Sin internet :    828,624  (23.73 %)
+
+   VALIDACION EXTERNA CONTRA EL INE
+     Resultado propio : 76.27 %
+     Cifra oficial    : 76.30 %
+     Diferencia       : 0.03 puntos
+     ✔ El universo coincide con el oficial
+
+   Desbalance: 3.21 a 1
+   → Se aplicará class_weight='balanced' en los clasificadores.
+
+── Objetivo 2 · ieh — regresión continua ───────────────────────────────────────────
+count    3492019.000
+mean           4.905
+std            2.837
+min            0.000
+25%            3.000
+50%            5.000
+75%            7.000
+max           13.000
+
+   Urbana : 5.86 bienes
+   Rural  : 3.04 bienes
+   Brecha : 2.81 bienes  ·  el hogar rural posee el 52.0 % del equipamiento urbano
+
+── Objetivo 3 · nivel_equip — clasificación multiclase ─────────────────────────────
+   Bajo      1,265,180  (36.23 %)
+   Medio     1,227,436  (35.15 %)
+   Alto        999,403  (28.62 %)
+
+   Balance: la clase mayor representa el 36.2 % y la menor el 28.6 %.
+   Al construirse por terciles, las tres clases quedan equilibradas,
+   a diferencia del objetivo binario.
+
+── Relación entre los tres objetivos ───────────────────────────────────────────────
+             Sin internet %  Con internet %
+nivel_equip                                
+Bajo                  49.26           50.74
+Medio                 14.90           85.10
+Alto                   2.26           97.74
+
+   La cobertura de internet crece de forma monótona con el nivel de
+   equipamiento: los tres objetivos miden dimensiones distintas de la
+   misma condición socioeconómica, sin ser redundantes entre sí.
+   [figura] figuras_v2\C01_objetivos.png
+
+══════════════════════════════════════════════════════════════════════════════════════
+  C3 · EFECTO DE LA LIMPIEZA
+══════════════════════════════════════════════════════════════════════════════════════
+
+── Bitácora de la Fase B ───────────────────────────────────────────────────────────
+ n        categoria                                           paso  valores_afectados  filas_eliminadas
+ 1         Universo               Filtro de viviendas particulares              26715             26715
+ 2         Universo                   Filtro de viviendas ocupadas             338146            338146
+ 3         Universo                       Viviendas con habitantes             840062            501916
+ 4        Faltantes                                 Código 9 → NaN            2595659                 0
+ 5         Objetivo Eliminación de registros sin variable objetivo             131692            131692
+ 6 Nulo estructural                      v16_desague → categoría 0             700816                 0
+ 7 Nulo estructural                                v20b_totemi → 0            3200203                 0
+ 8 Nulo estructural                                v21b_totfal → 0            3156354                 0
+ 9     Consistencia                           Validación de rangos                  0                 0
+10         Atípicos                     Valores atípicos legítimos               4854                 0
+11       Imputación        Imputación de variables de bienes y TIC               7812                 0
+12       Ingeniería                            Variables derivadas                  5                 0
+13             Fuga              Exclusión por fuga de información                  7                 0
+
+── Balance global ──────────────────────────────────────────────────────────────────
+   Registros originales        : 4,490,488
+   Registros conservados       : 3,492,019  (77.76 %)
+   Registros descartados       : 998,469  (22.24 %)
+   Valores tratados sin borrar : 11,002,325
+
+   Por cada registro eliminado se recuperaron 11.0 valores mediante
+   recodificación o imputación. El criterio fue siempre conservar el
+   dato antes que descartar la fila completa.
+
+── Comparación de indicadores clave ────────────────────────────────────────────────
+             indicador     antes   despues                                      nota
+             Registros 4,490,488 3,492,019     se descarta el universo no encuestado
+   Variables con nulos        43         0           resueltos sin imputación masiva
+ Cobertura de internet   59,31 %   76.27 % antes diluida por viviendas sin encuestar
+Índice de equipamiento      3,81      4.91  antes sesgado por los ceros artificiales
+ Asimetría de tot_pers   +729,66     +1.22         eliminados los valores imposibles
+    Máximo de tot_pers     8.645        25           el valor original era imposible
+   [figura] figuras_v2\C02_antes_despues.png
+
+══════════════════════════════════════════════════════════════════════════════════════
+  C4 · DISTRIBUCIONES Y VALORES ATIPICOS
+══════════════════════════════════════════════════════════════════════════════════════
+
+── Diagnóstico de atípicos tras la limpieza ────────────────────────────────────────
+                    min   Q1  mediana     Q3   max  atipicos    pct
+variable                                                           
+tot_pers          1.000  1.0      3.0  4.000  25.0     39266  1.124
+v13_habitac       1.000  1.0      2.0  3.000   8.0     81887  2.345
+v14_dormit        0.000  1.0      2.0  2.000   8.0    312786  8.957
+hacinamiento      0.125  1.0      1.5  2.333  25.0    183990  5.269
+pers_por_habitac  0.125  0.8      1.0  2.000  25.0    250980  7.187
+ieh               0.000  3.0      5.0  7.000  13.0         0  0.000
+
+   Los atípicos restantes son hogares numerosos o con alto
+   hacinamiento: casos reales que el proyecto debe identificar, no
+   errores de captura. Se conservan de forma deliberada.
+   [figura] figuras_v2\C03_distribuciones.png
+
+══════════════════════════════════════════════════════════════════════════════════════
+  C5 · ASOCIACION CON LOS OBJETIVOS
+══════════════════════════════════════════════════════════════════════════════════════
+
+── Correlación de Pearson con cada objetivo ────────────────────────────────────────
+                  con internet  con ieh
+hacin_critico          -0.0250  -0.1128
+hacinamiento           -0.0128  -0.1257
+idep                    0.0587   0.0900
+pers_por_habitac       -0.0039  -0.1516
+sin_servicios          -0.3331  -0.4691
+tip_hog                 0.1755   0.2413
+tot_pers                0.1471   0.2103
+urbrur                 -0.3764  -0.4688
+v01_tipoviv             0.0616  -0.0171
+v03_pared              -0.2475  -0.3344
+v04_revoq              -0.2265  -0.3544
+v05_techo              -0.0037   0.0439
+v06_piso                0.2618   0.2944
+v07_aguapro            -0.2245  -0.3196
+v08_aguadist           -0.2919  -0.4420
+v09_energia            -0.2977  -0.3957
+v10_combus             -0.1895  -0.2191
+v11_basura             -0.3497  -0.4657
+v12_cocina             -0.1349  -0.3176
+v13_habitac             0.1700   0.4350
+v14_dormit              0.2055   0.4295
+v15_servsan            -0.2841  -0.4573
+v16_desague             0.0465   0.0347
+v17_tenencia            0.1187   0.0350
+v20a_emi               -0.0078  -0.0272
+v20b_totemi             0.0031   0.0161
+v21a_fal               -0.0002  -0.0133
+v21b_totfal             0.0009   0.0131
+
+── Verificación de que desapareció el artefacto de la Fase A ───────────────────────
+   En la Fase A, v02_condocup mostraba una correlación de −0,464 con
+   el equipamiento. Era un artefacto: las viviendas desocupadas tenían
+   todos los bienes en nulo, de modo que la condición de ocupación
+   'predecía' el equipamiento de forma trivial.
+
+   La variable ya no forma parte del dataset: al filtrar el
+   universo quedó constante y fue descartada. Artefacto resuelto.
+
+── Multicolinealidad entre predictoras ─────────────────────────────────────────────
+   Pares con correlación superior a 0,70:
+     Hubo fallecimiento         ↔ N° de fallecimientos       0.949
+     Personas por dormitorio    ↔ Personas por habitación    0.871
+     Hubo emigración            ↔ N° de emigrantes           0.836
+     Personas por dormitorio    ↔ Hacinamiento crítico       0.789
+     N° de habitaciones         ↔ N° de dormitorios          0.771
+     Área urbana/rural          ↔ Manejo de basura           0.742
+     Servicio sanitario         ↔ Carencia de servicios      0.734
+     Personas en el hogar       ↔ Tipo de hogar              0.707
+
+   → Afecta a los modelos lineales (Ridge, Lasso, Elastic Net)
+     pero no a los basados en árboles. Se documentará al comparar.
+   [figura] figuras_v2\C04_correlaciones.png
+
+══════════════════════════════════════════════════════════════════════════════════════
+  C6 · EL DATASET ESTA LISTO PARA MODELAR
+══════════════════════════════════════════════════════════════════════════════════════
+
+── Lista de verificación ───────────────────────────────────────────────────────────
+   ✔ Sin valores nulos                    0 nulos
+   ✔ Todas las variables numéricas        1 no numérica (nivel_equip es categórica por diseño)
+   ✔ Objetivo binario correcto            valores [np.int8(0), np.int8(1)]
+   ✔ ieh en rango válido                  [0, 13]
+   ✔ Tres clases en nivel_equip           3 clases
+   ✔ Cobertura validada contra el INE     76.27 % frente a 76,30 %
+   ✔ Sin fuga de información              excluidas v19e_inetfijo, v19f_inetmovil, v19e_f y los bienes
+   ✔ Volumen suficiente                   3,492,019 registros
+
+── Consideraciones para la Fase D ──────────────────────────────────────────────────
+   1. DESBALANCE del objetivo binario
+      76.3 % frente a 23.7 % → class_weight='balanced'
+      y priorizar el recall de la clase minoritaria sobre la exactitud.
+
+   2. ESCALADO
+      Obligatorio para KNN y SVM, que operan con distancias; también
+      para los modelos lineales regularizados, porque la penalización
+      depende de la magnitud de los coeficientes. Neutro en árboles.
+
+   3. CODIFICACION
+      Las categóricas están codificadas como enteros sin orden real:
+      en v07_aguapro el código 5 no vale cinco veces el 1. Para los
+      modelos lineales se aplicará one-hot; los árboles las toleran.
+
+   4. VOLUMEN
+      3,492,019 registros. Para comparar algoritmos se usará una
+      muestra estratificada con random_state=42; el modelo
+      ganador se reentrenará con el conjunto completo.
+
+── Resumen de la Fase C ────────────────────────────────────────────────────────────
+
+   Registros              : 3,492,019
+   Predictoras            : 28
+   Objetivos              : 3 (binario, continuo, multiclase)
+   Nulos                  : 0
+   Memoria                : 363.0 MB
+   Validación externa     : 76.27 % frente a 76,30 % del INE
+   Tiempo de la fase      : 2.5 min
+
+   SIGUIENTE: FASE D · modelos lineales (simple, múltiple, polinomial,
+   Ridge, Lasso, Elastic Net) sobre los tres objetivos.
+
+   Guardados: C_resumen_post_limpieza.csv y C_correlaciones.csv
+
+
+
+
+Collecting openpyxl
+  Using cached openpyxl-3.1.5-py2.py3-none-any.whl.metadata (2.5 kB)
+Collecting et-xmlfile (from openpyxl)
+  Using cached et_xmlfile-2.0.0-py3-none-any.whl.metadata (2.7 kB)
+Using cached openpyxl-3.1.5-py2.py3-none-any.whl (250 kB)
+Using cached et_xmlfile-2.0.0-py3-none-any.whl (18 kB)
+Installing collected packages: et-xmlfile, openpyxl
+
+   -------------------- ------------------- 1/2 [openpyxl]
+   -------------------- ------------------- 1/2 [openpyxl]
+   -------------------- ------------------- 1/2 [openpyxl]
+   -------------------- ------------------- 1/2 [openpyxl]
+   -------------------- ------------------- 1/2 [openpyxl]
+   -------------------- ------------------- 1/2 [openpyxl]
+   -------------------- ------------------- 1/2 [openpyxl]
+   -------------------- ------------------- 1/2 [openpyxl]
+   -------------------- ------------------- 1/2 [openpyxl]
+   -------------------- ------------------- 1/2 [openpyxl]
+   -------------------- ------------------- 1/2 [openpyxl]
+   -------------------- ------------------- 1/2 [openpyxl]
+   -------------------- ------------------- 1/2 [openpyxl]
+   -------------------- ------------------- 1/2 [openpyxl]
+   -------------------- ------------------- 1/2 [openpyxl]
+   -------------------- ------------------- 1/2 [openpyxl]
+   -------------------- ------------------- 1/2 [openpyxl]
+   -------------------- ------------------- 1/2 [openpyxl]
+   -------------------- ------------------- 1/2 [openpyxl]
+   ---------------------------------------- 2/2 [openpyxl]
+
+Successfully installed et-xmlfile-2.0.0 openpyxl-3.1.5
+
+══════════════════════════════════════════════════════════════════════════════════════
+  FASE D · MODELOS LINEALES
+══════════════════════════════════════════════════════════════════════════════════════
+
+[notice] A new release of pip is available: 25.2 -> 26.2.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+   ✔ Bitácora de la Fase B importada (13 pasos)
+
+   Dataset limpio : 3,492,019 registros
+   Muestra        : 120,000 (estratificada, random_state=42)
+   Proporción con internet en la muestra: 76.27 %
+   [bitácora D-01] Muestra estratificada para modelado
+
+   Categóricas nominales : 19
+   Numéricas             : 9
+
+
+══════════════════════════════════════════════════════════════════════════════════════
+  D1 · PARTICION Y PREPROCESAMIENTO
+══════════════════════════════════════════════════════════════════════════════════════
+   Entrenamiento : 90,000
+   Prueba        : 30,000
+   Misma partición para los tres objetivos → comparación justa
+   [bitácora D-02] Partición entrenamiento/prueba
+
+   Columnas resultantes
+     A · códigos numéricos : 28
+     B · one-hot           : 94
+     C · polinomial grado 2: 139
+   [bitácora D-03] Definición de tres estrategias de codificación
+
+
+══════════════════════════════════════════════════════════════════════════════════════
+  D2 · A/B TESTING DE LA CODIFICACION
+══════════════════════════════════════════════════════════════════════════════════════
+
+── Hipótesis ───────────────────────────────────────────────────────────────────────
+   H0: codificar las categóricas con one-hot no mejora los modelos
+       lineales respecto de usar los códigos numéricos originales.
+   H1: one-hot mejora el desempeño, porque los códigos son nominales
+       y un modelo lineal los interpreta erróneamente como cantidades.
+
+── Resultado ───────────────────────────────────────────────────────────────────────
+             R2_regresion  AUC_clasificacion  segundos
+estrategia                                            
+A · Códigos        0.4535             0.7928    0.7955
+B · One-hot        0.5230             0.8107    3.3451
+
+   Mejora con one-hot · R²  : +0.0695
+   Mejora con one-hot · AUC : +0.0179
+
+   Bootstrap (500 remuestreos) de la reducción del error cuadrático
+     Diferencia media : +0.5514
+     IC 95 %          : [+0.5166, +0.5868]
+     Conclusión       : SE RECHAZA H0
+
+   Mejora relativa · regresión     : +15.335 %
+   Mejora relativa · clasificación : +2.258 %
+   Mejora relativa promedio        : +8.796 %
+
+   ESTRATEGIA ADOPTADA PARA LOS MODELOS LINEALES: B · One-hot
+   Criterio: mejora relativa promedio en las dos tareas, no una sola.
+   [bitácora D-04] A/B testing de codificación
+   [figura] figuras_v2\D01_ab_codificacion.png
+
+
+══════════════════════════════════════════════════════════════════════════════════════
+  D3 · MODELOS DE REGRESION — índice de equipamiento
+══════════════════════════════════════════════════════════════════════════════════════
+   Predictora de la regresión simple: sin_servicios (|r| = 0.471, la de mayor correlación)
+   Lineal simple            MAE 2.0054 · RMSE 2.4821 · R² 0.2251 · MAPE 60.84 % ·   0.0s
+   Lineal múltiple          MAE 1.5408 · RMSE 1.9473 · R² 0.5230 · MAPE 44.82 % ·   1.2s
+   Polinomial (grado 2)     MAE 1.5289 · RMSE 1.9350 · R² 0.5290 · MAPE 44.33 % ·   2.0s
+   Ridge (L2)               MAE 1.5406 · RMSE 1.9472 · R² 0.5230 · MAPE 44.82 % ·   0.7s
+   Lasso (L1)               MAE 1.5649 · RMSE 1.9772 · R² 0.5082 · MAPE 45.67 % ·   0.8s
+   Elastic Net              MAE 1.5554 · RMSE 1.9660 · R² 0.5138 · MAPE 45.33 % ·   0.9s
+
+── Tabla comparativa ───────────────────────────────────────────────────────────────
+                         MAE     MSE    RMSE      R2   MAPE_%
+Lineal simple         2.0054  6.1607  2.4821  0.2251  60.8404
+Lineal múltiple       1.5408  3.7920  1.9473  0.5230  44.8243
+Polinomial (grado 2)  1.5289  3.7441  1.9350  0.5290  44.3289
+Ridge (L2)            1.5406  3.7917  1.9472  0.5230  44.8155
+Lasso (L1)            1.5649  3.9094  1.9772  0.5082  45.6664
+Elastic Net           1.5554  3.8652  1.9660  0.5138  45.3326
+
+   Línea base (predecir siempre la media): RMSE 2.8197
+   Mejor modelo lineal: Polinomial (grado 2)  ·  R² 0.5290  ·  mejora 31.4 % sobre la base
+
+   Nota sobre MAPE: se calcula excluyendo los hogares con ieh = 0,
+   porque dividir por cero lo vuelve indefinido.
+
+   Lasso anuló 53 de 94 coeficientes (56.4 %): selección automática de variables
+   [bitácora D-05] Regresión lineal sobre ieh
+   [figura] figuras_v2\D02_regresion_ieh.png
+
+══════════════════════════════════════════════════════════════════════════════════════
+  D4 · CLASIFICACION BINARIA — acceso a internet
+══════════════════════════════════════════════════════════════════════════════════════
+
+── Modelo de probabilidad lineal (MPL) ─────────────────────────────────────────────
+   Aplicar regresión lineal a un objetivo 0/1 se denomina modelo de
+   probabilidad lineal. Es legítimo como referencia, pero su defecto
+   conocido es que puede predecir valores fuera de [0, 1]. Se incluye
+   precisamente para demostrar por qué existe la regresión logística.
+   MPL simple             predicciones fuera de [0,1]:  0.00 %  ·  AUC 0.7103
+   MPL múltiple           predicciones fuera de [0,1]:  5.04 %  ·  AUC 0.8111
+   MPL polinomial         predicciones fuera de [0,1]:  5.26 %  ·  AUC 0.8114
+
+── Modelos de clasificación propiamente dichos ─────────────────────────────────────
+   Logística                Acc 0.7494 · F1 0.8216 · Recall mín. 0.7264 · AUC 0.8107 ·   2.7s
+   Logística L2 (Ridge)     Acc 0.7493 · F1 0.8215 · Recall mín. 0.7268 · AUC 0.8107 ·   1.6s
+   Logística L1 (Lasso)     Acc 0.7490 · F1 0.8212 · Recall mín. 0.7273 · AUC 0.8106 ·   4.0s
+   Logística Elastic Net    Acc 0.7493 · F1 0.8215 · Recall mín. 0.7278 · AUC 0.8107 ·   3.8s
+   Clasificador Ridge       Acc 0.7511 · F1 0.8233 · Recall mín. 0.7212 · AUC 0.8108 ·   0.7s
+
+── Tabla comparativa ───────────────────────────────────────────────────────────────
+                       Accuracy  Precision  Recall  Recall_min      F1  ROC_AUC  PR_AUC
+MPL simple               0.7627     0.7627  1.0000      0.0000  0.8654   0.7103  0.8504
+MPL múltiple             0.7978     0.8318  0.9210      0.4016  0.8742   0.8111  0.9248
+MPL polinomial           0.7987     0.8323  0.9218      0.4030  0.8748   0.8114  0.9248
+Logística                0.7494     0.8988  0.7565      0.7264  0.8216   0.8107  0.9259
+Logística L2 (Ridge)     0.7493     0.8990  0.7563      0.7268  0.8215   0.8107  0.9260
+Logística L1 (Lasso)     0.7490     0.8991  0.7558      0.7273  0.8212   0.8106  0.9259
+Logística Elastic Net    0.7493     0.8993  0.7560      0.7278  0.8215   0.8107  0.9259
+Clasificador Ridge       0.7511     0.8976  0.7604      0.7212  0.8233   0.8108  0.9261
+
+   Referencia MPL con mayor AUC  : MPL polinomial (0.8114) · recall mín. 0.4030
+   Mejor clasificador por AUC    : Clasificador Ridge (0.8108)
+   Mejor por recall SIN internet : Logística Elastic Net (0.7278) ← la métrica que importa
+
+   El MPL y la logística alcanzan un AUC equivalente (diferencia +0.0006).
+   Aun así la logística es preferible: sus salidas son
+   probabilidades válidas y su recall minoritario es mayor.
+   [bitácora D-06] Clasificación lineal de internet
+   [figura] figuras_v2\D03_clasificacion_curvas.png
+
+══════════════════════════════════════════════════════════════════════════════════════
+  D5 · CLASIFICACION MULTICLASE — nivel de equipamiento
+══════════════════════════════════════════════════════════════════════════════════════
+   nivel_equip es la versión categorizada de ieh. Permite aplicar a la
+   dimensión material los mismos clasificadores que a internet.
+   Logística multinomial    Acc 0.6316 · Precision 0.6334 · Recall 0.6380 · F1 0.6329 ·  15.6s
+   Logística L1 (Lasso)     Acc 0.6313 · Precision 0.6331 · Recall 0.6377 · F1 0.6327 ·  12.8s
+   Logística Elastic Net    Acc 0.6314 · Precision 0.6333 · Recall 0.6379 · F1 0.6328 ·  22.5s
+   Clasificador Ridge       Acc 0.6176 · Precision 0.6164 · Recall 0.6268 · F1 0.6154 ·   1.9s
+
+   Mejor por F1 macro: Logística multinomial (0.6329)
+   Referencia del azar con 3 clases: 0,333
+   [bitácora D-07] Clasificación multiclase de nivel_equip
+   [figura] figuras_v2\D06_multiclase.png
+
+
+
+
+
+
+══════════════════════════════════════════════════════════════════════════════════════
+  E1 · KNN — EL DILEMA SESGO-VARIANZA
+══════════════════════════════════════════════════════════════════════════════════════
+
+── Barrido del parámetro k ─────────────────────────────────────────────────────────
+   k =   1  ·  entrenamiento 0.9924  ·  validación 0.7324  ·  AUC 0.6326
+   k =   3  ·  entrenamiento 0.8612  ·  validación 0.7584  ·  AUC 0.7172
+   k =   5  ·  entrenamiento 0.8308  ·  validación 0.7716  ·  AUC 0.7432
+   k =   9  ·  entrenamiento 0.8161  ·  validación 0.7818  ·  AUC 0.7739
+   k =  15  ·  entrenamiento 0.8087  ·  validación 0.7912  ·  AUC 0.7922
+   k =  25  ·  entrenamiento 0.8028  ·  validación 0.7890  ·  AUC 0.7994
+   k =  41  ·  entrenamiento 0.7970  ·  validación 0.7904  ·  AUC 0.8037
+   k =  61  ·  entrenamiento 0.7948  ·  validación 0.7872  ·  AUC 0.8019
+   k =  91  ·  entrenamiento 0.7944  ·  validación 0.7912  ·  AUC 0.8033
+
+   k con máximo AUC      : 41 (AUC 0.8037)
+   k elegido (parsimonia): 41 (AUC 0.8037)
+   Criterio: el menor k a menos de 0,002 del AUC máximo.
+   Aumentar k por encima de 41 solo encarece la predicción.
+   Con k = 1 el modelo memoriza el entrenamiento: su exactitud allí
+   es 0.9924, pero cae a 0.7324 en datos nuevos. Eso es sobreajuste.
+   [bitácora E-03] Selección del parámetro k de KNN
+   [figura] figuras_v2\E01_knn_eleccion_k.png
+
+══════════════════════════════════════════════════════════════════════════════════════
+  E2 · KNN — regresión, binaria y multiclase
+══════════════════════════════════════════════════════════════════════════════════════
+   KNN regresión     R² 0.4918 · RMSE 2.0100 · MAE 1.5790 · MAPE 46.54 % · 5.2s
+   KNN binaria       AUC 0.7971 · F1 0.7968 · recall mín. 0.7498 · 5.2s
+                     umbral ajustado a 0.761 para compensar el desbalance
+   KNN multiclase    F1 macro 0.6136 · 5.2s
+   [bitácora E-04] KNN sobre los tres objetivos
+
+══════════════════════════════════════════════════════════════════════════════════════
+  E3 · NAIVE BAYES — ¿qué supuesto se ajusta a los datos?
+══════════════════════════════════════════════════════════════════════════════════════
+
+── Justificación ───────────────────────────────────────────────────────────────────
+   Naive Bayes supone que las variables son independientes entre sí
+   dado el objetivo. Además, cada variante asume una distribución:
+     · Gaussiano  → variables continuas con distribución normal
+     · Categórico → variables categóricas con probabilidades por nivel
+   Las numéricas continuas se DISCRETIZAN en 5 intervalos por cuantiles
+   para que el categórico pueda procesarlas.
+
+   NOTA: Naive Bayes no tiene versión de regresión. Para la dimensión
+   del equipamiento se aplica sobre nivel_equip, la categorización de ieh.
+   [bitácora E-05] Discretización para Naive Bayes categórico
+   Naive Bayes gaussiano    AUC 0.7741 · F1 0.8324 · recall mín. 0.6124 · 1.0s
+                            multiclase F1 macro 0.4821
+   Naive Bayes categórico   AUC 0.8017 · F1 0.8297 · recall mín. 0.6835 · 0.5s
+                            multiclase F1 macro 0.6107
+
+   Diferencia de AUC (categórico − gaussiano): +0.0276
+   CONFIRMADO: el supuesto adecuado a la naturaleza de los datos
+   produce mejor modelo. Elegir la variante según el tipo de variable
+   no es un detalle técnico sino una decisión que afecta al resultado.
+   [bitácora E-06] A/B testing de supuestos en Naive Bayes
+
+══════════════════════════════════════════════════════════════════════════════════════
+  E4 · SVM — lineal frente a kernel RBF
+══════════════════════════════════════════════════════════════════════════════════════
+
+── Por qué dos versiones ───────────────────────────────────────────────────────────
+   El SVM lineal separa las clases con un hiperplano; su costo crece de
+   forma lineal con los datos, así que usa los 90.000 registros.
+   El kernel RBF proyecta los datos a un espacio de mayor dimensión y
+   captura fronteras curvas, pero su costo crece de forma cuadrática:
+   se entrena con 8,000 registros. La comparación revela si
+   las fronteras curvas compensan el menor volumen de entrenamiento.
+   SVR lineal           R² 0.5207 · RMSE 1.9519 · MAE 1.5376 · 8.0s  (entrenamiento completo)
+   SVR kernel RBF       R² 0.5279 · RMSE 1.9374 · MAE 1.5186 · 54.3s  (submuestra 8,000)
+   SVM lineal           AUC 0.8108 · F1 0.8230 · recall mín. 0.7219 · 3.8s  (entrenamiento completo)
+   SVM kernel RBF       AUC 0.7966 · F1 0.8193 · recall mín. 0.7144 · 123.4s  (submuestra 8,000)
+   SVM lineal           multiclase F1 macro 0.6240 · 10.9s
+   SVM kernel RBF       multiclase F1 macro 0.6276 · 65.8s
+   [bitácora E-07] SVM lineal y RBF
+
+══════════════════════════════════════════════════════════════════════════════════════
+  E5 · COMPARACION DE LOS MODELOS DE LA FASE
+══════════════════════════════════════════════════════════════════════════════════════
+   [figura] figuras_v2\E02_clasificacion_curvas.png
+   [figura] figuras_v2\E03_matrices_binarias.png
+   [figura] figuras_v2\E04_regresion.png
+   [figura] figuras_v2\E05_multiclase.png
+
+══════════════════════════════════════════════════════════════════════════════════════
+  E6 · RESUMEN DE LA FASE E
+══════════════════════════════════════════════════════════════════════════════════════
+
+── Clasificación binaria ───────────────────────────────────────────────────────────
+                        Accuracy  Precision  Recall  Recall_min      F1  ROC_AUC  PR_AUC
+KNN                       0.7223     0.9017  0.7137      0.7498  0.7968   0.7971  0.9149
+Naive Bayes gaussiano     0.7546     0.8689  0.7989      0.6124  0.8324   0.7741  0.9033
+Naive Bayes categórico    0.7562     0.8878  0.7788      0.6835  0.8297   0.8017  0.9226
+SVM lineal                0.7508     0.8978  0.7598      0.7219  0.8230   0.8108  0.9261
+SVM kernel RBF            0.7458     0.8948  0.7556      0.7144  0.8193   0.7966  0.9158
+
+── Regresión ───────────────────────────────────────────────────────────────────────
+                   MAE     MSE    RMSE      R2   MAPE_%
+KNN regresión   1.5790  4.0403  2.0100  0.4918  46.5362
+SVR lineal      1.5376  3.8101  1.9519  0.5207  44.0765
+SVR kernel RBF  1.5186  3.7534  1.9374  0.5279  42.8441
+
+── Multiclase ──────────────────────────────────────────────────────────────────────
+                        Accuracy  Precision  Recall      F1
+KNN                       0.6136     0.6114  0.6175  0.6136
+Naive Bayes gaussiano     0.5177     0.5334  0.5431  0.4821
+Naive Bayes categórico    0.6101     0.6119  0.6194  0.6107
+SVM lineal                0.6253     0.6230  0.6330  0.6240
+SVM kernel RBF            0.6262     0.6268  0.6314  0.6276
+
+   REFERENCIA DE LA FASE D (mejores lineales)
+     ieh         : Polinomial  R² 0,5290
+     internet    : Logística   AUC 0,811 · recall mín. 0,727
+     nivel_equip : Logística   F1 macro 0,633
+
+   MEJORES DE LA FASE E
+     ieh         : SVR kernel RBF           R² 0.5279
+     internet    : SVM lineal               AUC 0.8108
+     recall mín. : KNN                      0.7498
+     nivel_equip : SVM kernel RBF           F1 macro 0.6276
+
+   Modelos entrenados en la fase : 13
+   Tiempo de la fase             : 9.1 min
+
+   [bitácora E-08] Cierre de la Fase E
+   ✔ Bitácora actualizada: BITACORA_PROYECTO.xlsx  (registro 21 · modelos 13)
+
+   Consola completa guardada en: logs\consola_fase_E.txt
+   SIGUIENTE: FASE F · árboles, Random Forest, Bagging, Voting, Stacking
+
+
+
+
+
+
+
+
+══════════════════════════════════════════════════════════════════════════════════════
+  FASE F · ARBOLES DE DECISION Y ENSAMBLES
+══════════════════════════════════════════════════════════════════════════════════════
+   Muestra       : 120,000  (idéntica a D y E)
+   Entrenamiento : 90,000
+   Prueba        : 30,000  (mismas filas que D y E)
+   [bitácora F-01] Reproducción de la partición de D y E
+
+══════════════════════════════════════════════════════════════════════════════════════
+  F1 · ÁRBOL DE DECISIÓN — Gini frente a Entropía
+══════════════════════════════════════════════════════════════════════════════════════
+
+── Nota sobre la codificación ──────────────────────────────────────────────────────
+   Los árboles NO requieren one-hot ni escalado: dividen por umbrales
+   y son insensibles a la magnitud. Se usan los códigos originales, lo
+   que además reduce de 113 a 28 las columnas y acelera el cálculo.
+
+   Verificación · códigos AUC 0.8030  ·  one-hot AUC 0.8012  ·  diferencia +0.0018
+   [bitácora F-02] Codificación para árboles
+
+── Comparación de criterios · profundidad 10 ───────────────────────────────────────
+   Árbol · Gini         AUC 0.8030 · F1 0.8177 · recall mín. 0.7216 · hojas 399 · 1.1s
+   Árbol · Entropía     AUC 0.8022 · F1 0.8161 · recall mín. 0.7202 · hojas 409 · 1.0s
+
+   NODO RAÍZ (antes de cualquier división)
+     Proporciones   : sin internet 0.2373 · con internet 0.7627
+     Gini           : 1 − (0.2373² + 0.7627²) = 0.3620
+     Entropía       : 0.7905 bits
+
+   ¿POR QUÉ EL DIBUJO DEL ÁRBOL MUESTRA gini = 0,5 EN LA RAÍZ?
+     El cálculo anterior usa las proporciones reales. Pero el árbol se
+     entrenó con class_weight='balanced', que multiplica cada hogar sin
+     internet por 3.21 para compensar el desbalance. El árbol
+     've' entonces ambas clases con el mismo peso: [0,5 ; 0,5], y la
+     impureza de la raíz es la máxima posible: 1 − (0,5² + 0,5²) = 0,5
+
+   Primera división elegida (Gini): Área urbana/rural
+   Es la variable que más reduce la impureza de todas las disponibles.
+   [figura] figuras_v2\F01_arbol_gini_entropia.png
+
+══════════════════════════════════════════════════════════════════════════════════════
+  F2 · PROFUNDIDAD DEL ÁRBOL
+══════════════════════════════════════════════════════════════════════════════════════
+   profundidad          1  ·  AUC entrenamiento 0.7079  ·  prueba 0.7103  ·  hojas       2
+   profundidad          2  ·  AUC entrenamiento 0.7569  ·  prueba 0.7584  ·  hojas       4
+   profundidad          3  ·  AUC entrenamiento 0.7724  ·  prueba 0.7740  ·  hojas       8
+   profundidad          5  ·  AUC entrenamiento 0.7964  ·  prueba 0.7957  ·  hojas      32
+   profundidad          7  ·  AUC entrenamiento 0.8078  ·  prueba 0.7998  ·  hojas     125
+   profundidad         10  ·  AUC entrenamiento 0.8304  ·  prueba 0.7895  ·  hojas     731
+   profundidad         13  ·  AUC entrenamiento 0.8680  ·  prueba 0.7555  ·  hojas   2,619
+   profundidad         16  ·  AUC entrenamiento 0.9119  ·  prueba 0.7048  ·  hojas   5,831
+   profundidad         20  ·  AUC entrenamiento 0.9594  ·  prueba 0.6552  ·  hojas  11,351
+   profundidad         25  ·  AUC entrenamiento 0.9884  ·  prueba 0.6330  ·  hojas  17,819
+   profundidad       None  ·  AUC entrenamiento 0.9993  ·  prueba 0.6219  ·  hojas  24,955
+
+   Profundidad óptima: 7 (AUC de prueba 0.7998)
+   Sin límite de profundidad: AUC de entrenamiento 0.9993 frente a 0.6219 en prueba
+   → el árbol sin restricciones memoriza el entrenamiento con 24,955 hojas
+   [figura] figuras_v2\F02_profundidad.png
+
+══════════════════════════════════════════════════════════════════════════════════════
+  F3 · PODA POR COSTO-COMPLEJIDAD
+══════════════════════════════════════════════════════════════════════════════════════
+   Ruta de poda calculada sobre 20,000 registros
+   Valores de alpha evaluados: 22
+
+   alpha óptimo : 0.000194
+   hojas        : 131 (frente a 5,564 del árbol sin podar)
+   AUC prueba   : 0.7876
+   La poda eliminó el 97.6 % de las hojas
+
+   Árbol podado reentrenado con 90,000 registros · AUC 0.7997
+   [figura] figuras_v2\F03_poda.png
+
+══════════════════════════════════════════════════════════════════════════════════════
+  F4 · ÁRBOLES DE REGRESIÓN — criterios de división
+══════════════════════════════════════════════════════════════════════════════════════
+
+── Justificación del criterio Poisson ──────────────────────────────────────────────
+   ieh es un CONTEO: número de bienes entre 0 y 13. La desviación de
+   Poisson es la función de pérdida natural para datos de conteo, porque
+   modela que la varianza crece con la media. Es el criterio teóricamente
+   adecuado, y se verifica aquí si también lo es empíricamente.
+
+   Comparación de criterios sobre 20,000 registros
+   (absolute_error es muy costoso sobre el conjunto completo)
+   squared_error    R² 0.4983 · RMSE 1.9971 · 0.3s
+   friedman_mse     R² 0.4983 · RMSE 1.9971 · 0.2s
+   absolute_error   R² 0.4706 · RMSE 2.0516 · 1.7s
+   poisson          R² 0.4998 · RMSE 1.9941 · 0.2s
+
+   Mejor criterio: poisson
+
+   Árbol final (poisson, 90,000 registros) · R² 0.5129 · RMSE 1.9678 · MAE 1.5507 · MAPE 44.69 %
+   [figura] figuras_v2\F04_arbol_regresion.png
+
+══════════════════════════════════════════════════════════════════════════════════════
+  F5 · ÁRBOL MULTICLASE — nivel de equipamiento
+══════════════════════════════════════════════════════════════════════════════════════
+   Accuracy 0.6178 · Precision 0.6186 · Recall 0.6217 · F1 macro 0.6190
+   [figura] figuras_v2\F05_arbol_multiclase.png
+
+══════════════════════════════════════════════════════════════════════════════════════
+  F6 · RANDOM FOREST
+══════════════════════════════════════════════════════════════════════════════════════
+   Binaria    AUC 0.8162 · F1 0.8180 · recall mín. 0.7431 · 14.3s
+   Regresión  R² 0.5441 · RMSE 1.9038 · MAE 1.5071 · MAPE 43.79 % · 9.5s
+   Multiclase F1 macro 0.6330 · 14.4s
+
+   Las 5 variables más importantes para predecir internet:
+     Área urbana/rural          0.1582
+     Manejo de basura           0.1300
+     Material de piso           0.1134
+     Combustible de cocina      0.0898
+     Carencia servicios         0.0590
+   [figura] figuras_v2\F06_random_forest.png
+
+══════════════════════════════════════════════════════════════════════════════════════
+  F7 · EXTRA TREES — árboles extremadamente aleatorizados
+══════════════════════════════════════════════════════════════════════════════════════
+   Binaria    AUC 0.8121 · F1 0.8161 · recall mín. 0.7399 · 15.9s
+   Regresión  R² 0.5234 · RMSE 1.9465 · 10.3s
+   Multiclase F1 macro 0.6234 · 14.7s
+
+               Random Forest  Extra Trees
+AUC binaria           0.8162       0.8121
+R² regresión          0.5441       0.5234
+F1 multiclase         0.6330       0.6234
+   [figura] figuras_v2\F07_extra_trees.png
+
+══════════════════════════════════════════════════════════════════════════════════════
+  F8 · BAGGING
+══════════════════════════════════════════════════════════════════════════════════════
+   Binaria    AUC 0.8147 · F1 0.8272 · recall mín. 0.7202 · 29.0s
+   Regresión  R² 0.5394 · RMSE 1.9135 · 11.6s
+   Multiclase F1 macro 0.6315 · 15.4s
+
+   AUC con 1 árbol: 0.7809  ·  con 60: 0.8147  ·  ganancia +0.0338
+   [figura] figuras_v2\F08_bagging.png
+
+══════════════════════════════════════════════════════════════════════════════════════
+  F9 · APRENDICES DÉBILES FRENTE A FUERTES
+══════════════════════════════════════════════════════════════════════════════════════
+                        auc_train  auc_test  brecha
+modelo                                             
+Tocón (1 división)         0.7079    0.7103 -0.0024
+Bagging de 100 tocones     0.7285    0.7330 -0.0045
+Árbol profundidad 5        0.7964    0.7957  0.0007
+Árbol sin límite           0.9993    0.6219  0.3774
+Random Forest              0.8430    0.8162  0.0268
+
+   El tocón es un aprendiz débil: una sola pregunta.
+   El árbol sin límite sobreajusta: brecha de 0.3774 entre entrenamiento y prueba.
+   Random Forest combina muchos árboles y logra el mejor AUC de prueba
+   con una brecha de solo 0.0268.
+   [figura] figuras_v2\F09_debiles_fuertes.png
+
+══════════════════════════════════════════════════════════════════════════════════════
+  F10 · VOTING — votación dura y blanda
+══════════════════════════════════════════════════════════════════════════════════════
+   Entrenado con 30,000 registros: combina tres modelos de
+   distinta naturaleza y su costo es la suma de los tres.
+   Voting duro      AUC 0.7676 · F1 0.8133 · recall mín. 0.7469 · 4.1s
+   Voting blando    AUC 0.8125 · F1 0.8174 · recall mín. 0.7376 · 5.9s
+
+── Contribución de cada componente (votación blanda) ───────────────────────────────
+   Logística  individual AUC 0.8092
+   Árbol      individual AUC 0.7941
+   Bosque     individual AUC 0.8134
+
+   Voting regresión  R² 0.5367 · RMSE 1.9193
+   Voting multiclase F1 macro 0.6316
+   [figura] figuras_v2\F10_voting.png
+
+══════════════════════════════════════════════════════════════════════════════════════
+  F11 · STACKING — apilamiento
+══════════════════════════════════════════════════════════════════════════════════════
+   Binaria    AUC 0.8149 · F1 0.8171 · recall mín. 0.7465 · 14.2s
+
+   PESOS QUE APRENDIÓ EL META-MODELO
+     Logística  +2.1507
+     Árbol      +0.2311
+     Bosque     +2.6571
+   El meta-modelo confía más en: Bosque
+
+   Regresión  R² 0.5425 · RMSE 1.9071 · 13.2s
+   Multiclase F1 macro 0.6363 · 17.9s
+   [figura] figuras_v2\F11_stacking.png
+
+══════════════════════════════════════════════════════════════════════════════════════
+  F12 · COMPARACIÓN GLOBAL DE LA FASE F
+══════════════════════════════════════════════════════════════════════════════════════
+
+── Clasificación binaria ───────────────────────────────────────────────────────────
+                  Accuracy  Precision  Recall  Recall_min      F1  ROC_AUC  PR_AUC
+Árbol · Gini        0.7444     0.8966  0.7515      0.7216  0.8177   0.8030  0.9191
+Árbol · Entropía    0.7424     0.8959  0.7494      0.7202  0.8161   0.8022  0.9193
+Árbol podado        0.7536     0.8944  0.7676      0.7088  0.8262   0.7997  0.9149
+Random Forest       0.7463     0.9034  0.7473      0.7431  0.8180   0.8162  0.9286
+Extra Trees         0.7438     0.9020  0.7451      0.7399  0.8161   0.8121  0.9269
+Bagging             0.7556     0.8980  0.7667      0.7202  0.8272   0.8147  0.9276
+Voting duro         0.7411     0.9037  0.7393      0.7469  0.8133   0.7676  0.8829
+Voting blando       0.7453     0.9016  0.7477      0.7376  0.8174   0.8125  0.9262
+Stacking            0.7455     0.9043  0.7452      0.7465  0.8171   0.8149  0.9278
+
+── Regresión ───────────────────────────────────────────────────────────────────────
+                       MAE     MSE    RMSE      R2   MAPE_%
+Árbol de regresión  1.5507  3.8723  1.9678  0.5129  44.6922
+Random Forest       1.5071  3.6245  1.9038  0.5441  43.7878
+Extra Trees         1.5449  3.7889  1.9465  0.5234  44.9274
+Bagging             1.5084  3.6615  1.9135  0.5394  43.6533
+Voting              1.5156  3.6835  1.9193  0.5367  43.8069
+Stacking            1.5039  3.6371  1.9071  0.5425  43.2211
+
+── Multiclase ──────────────────────────────────────────────────────────────────────
+                   Accuracy  Precision  Recall      F1
+Árbol de decisión    0.6178     0.6186  0.6217  0.6190
+Random Forest        0.6323     0.6318  0.6373  0.6330
+Extra Trees          0.6248     0.6217  0.6316  0.6234
+Bagging              0.6305     0.6307  0.6353  0.6315
+Voting               0.6308     0.6310  0.6362  0.6316
+Stacking             0.6355     0.6352  0.6404  0.6363
+
+   TECHO DE LAS FASES D Y E       MEJOR DE LA FASE F
+   AUC internet   0,811           Random Forest          0.8162
+   Recall mínimo  0,750 (KNN)     Voting duro            0.7469
+   R² ieh         0,529           Random Forest          0.5441
+   F1 nivel       0,633           Stacking               0.6363
+
+   [figura] figuras_v2\F12_comparacion_global.png
+
+
+
+
+
+
+
+
+
+
+
+Python en uso: 3.13.7
+Ejecutable   : c:\Users\HP\AppData\Local\Programs\Python\Python313\python.exe
+
+   ✔ lightgbm   ya está instalado
+   ✔ xgboost    ya está instalado
+   ✔ catboost   ya está instalado
+
+   Todas las librerías disponibles.
+
+   Si se instaló algo NUEVO, reinicia el kernel:
+   Ctrl+Shift+P  →  'Jupyter: Restart Kernel'  →  luego ejecuta desde G0
+
+
+
+
+
+
+══════════════════════════════════════════════════════════════════════════════════════
+  FASE G · BOOSTING
+══════════════════════════════════════════════════════════════════════════════════════
+   XGBoost  : disponible
+   LightGBM : disponible
+   CatBoost : disponible
+   Muestra       : 120,000  (idéntica a D, E y F)
+   Entrenamiento : 90,000  (de ellos 9,000 para parada temprana)
+   Prueba        : 30,000  (mismas filas que D, E y F)
+   Peso de la clase positiva para balancear: 0.3111
+   [bitácora G-01] Reproducción de la partición de D, E y F
+   [bitácora G-02] Validación interna para parada temprana
+
+══════════════════════════════════════════════════════════════════════════════════════
+  G1 · ADABOOST — reponderar los errores
+══════════════════════════════════════════════════════════════════════════════════════
+   Binaria    AUC 0.7854 · F1 0.8403 · recall mín. 0.6407 · 1.3s
+   Regresión  R² 0.4657 · RMSE 2.0609 · MAE 1.6643 · MAPE 51.93 % · 46.0s
+   Multiclase F1 macro 0.6132 · 7.2s
+
+   AUC con 1 árbol   : 0.7103
+   AUC con 200 árboles: 0.7854
+   Ganancia del boosting: +0.0751
+   [figura] figuras_v2\G01_adaboost.png
+
+══════════════════════════════════════════════════════════════════════════════════════
+  G2 · BOOSTING FRENTE A BAGGING — mismo aprendiz débil
+══════════════════════════════════════════════════════════════════════════════════════
+   Un tocón                   AUC 0.7103 · 0.1s
+   Bagging de 100 tocones     AUC 0.7330 · 15.7s
+   AdaBoost de 100 tocones    AUC 0.7726 · 0.9s
+
+   Ganancia de Bagging : +0.0227
+   Ganancia de Boosting: +0.0623
+   El boosting ganó 2.7 veces más que el bagging
+
+   CONCLUSIÓN: el tocón tiene SESGO alto, no varianza alta. Bagging
+   promedia tocones igual de simples y no lo corrige. Boosting los
+   encadena para que cada uno cubra lo que el anterior no aprendió.
+   [figura] figuras_v2\G02_boosting_vs_bagging.png
+
+══════════════════════════════════════════════════════════════════════════════════════
+  G3 · GRADIENT BOOSTING — ajustar los residuos
+══════════════════════════════════════════════════════════════════════════════════════
+   Binaria    AUC 0.8169 · F1 0.8162 · recall mín. 0.7470 · 21.6s
+   Regresión  R² 0.5479 · RMSE 1.8958 · MAE 1.4968 · MAPE 43.19 % · 37.9s
+   Multiclase F1 macro 0.6399 · 54.9s
+
+   Error cuadrático de prueba · árbol 1: 7.3255 · árbol 150: 3.5939
+   [figura] figuras_v2\G03_gradient_boosting.png
+
+══════════════════════════════════════════════════════════════════════════════════════
+  G4 · TASA DE APRENDIZAJE — el hiperparámetro central del boosting
+══════════════════════════════════════════════════════════════════════════════════════
+   tasa 0.01   AUC máximo 0.8030 en el árbol 200  ·  AUC final 0.8030  ·  21.3s
+   tasa 0.05   AUC máximo 0.8138 en el árbol 200  ·  AUC final 0.8138  ·  20.7s
+   tasa 0.1    AUC máximo 0.8157 en el árbol 195  ·  AUC final 0.8156  ·  19.6s
+   tasa 0.3    AUC máximo 0.8167 en el árbol 149  ·  AUC final 0.8160  ·  19.8s
+   tasa 1.0    AUC máximo 0.8086 en el árbol  47  ·  AUC final 0.7994  ·  20.8s
+
+   Tasa óptima: 0.3
+   Con tasa 1,0 cada árbol corrige todo el error de golpe: aprende
+   rápido pero oscila y se estanca antes.
+   [figura] figuras_v2\G04_tasa_aprendizaje.png
+
+══════════════════════════════════════════════════════════════════════════════════════
+  G5 · XGBOOST — gradient boosting regularizado
+══════════════════════════════════════════════════════════════════════════════════════
+   Binaria    AUC 0.8182 · F1 0.8186 · recall mín. 0.7448 · parada en 106 · 2.6s
+   Regresión  R² 0.5585 · RMSE 1.8735 · MAE 1.4728 · MAPE 42.32 % · 2.6s
+   Multiclase F1 macro 0.6389 · 8.2s
+   [figura] figuras_v2\G05_xgboost.png
+
+══════════════════════════════════════════════════════════════════════════════════════
+  G6 · LIGHTGBM — crecimiento por hojas y categóricas nativas
+══════════════════════════════════════════════════════════════════════════════════════
+
+── A/B testing · categóricas nativas frente a códigos numéricos ────────────────────
+   Códigos numéricos      AUC 0.8177 · 2.3s
+   Categóricas nativas    AUC 0.8187 · 1.6s
+   Diferencia: +0.0011 → se usan categóricas nativas
+   [bitácora G-08] A/B testing de categóricas en LightGBM
+
+   Binaria    AUC 0.8187 · F1 0.8162 · recall mín. 0.7501 · parada en 81 · 1.7s
+   Regresión  R² 0.5626 · RMSE 1.8648 · MAE 1.4651 · MAPE 41.98 % · objetivo Poisson · 3.5s
+   Multiclase F1 macro 0.6402 · 5.3s
+   [figura] figuras_v2\G06_lightgbm.png
+
+══════════════════════════════════════════════════════════════════════════════════════
+  G7 · CATBOOST — tratamiento ordenado de categóricas
+══════════════════════════════════════════════════════════════════════════════════════
+   Binaria    AUC 0.8188 · F1 0.8184 · recall mín. 0.7467 · parada en 300 · 67.0s
+   Regresión  R² 0.5621 · RMSE 1.8658 · MAE 1.4664 · MAPE 42.12 % · 118.6s
+   Multiclase F1 macro 0.6409 · 229.3s
+   [figura] figuras_v2\G07_catboost.png
+
+══════════════════════════════════════════════════════════════════════════════════════
+  G8 · COMPARACIÓN GLOBAL DE LA FASE G
+══════════════════════════════════════════════════════════════════════════════════════
+
+── Clasificación binaria ───────────────────────────────────────────────────────────
+                   Accuracy  Precision  Recall  Recall_min      F1  ROC_AUC  PR_AUC
+AdaBoost             0.7664     0.8781  0.8055      0.6407  0.8403   0.7854  0.9020
+Gradient Boosting    0.7445     0.9043  0.7437      0.7470  0.8162   0.8169  0.9288
+XGBoost              0.7471     0.9040  0.7479      0.7448  0.8186   0.8182  0.9291
+LightGBM             0.7448     0.9053  0.7431      0.7501  0.8162   0.8187  0.9296
+CatBoost             0.7471     0.9046  0.7473      0.7467  0.8184   0.8188  0.9291
+
+── Regresión ───────────────────────────────────────────────────────────────────────
+                      MAE     MSE    RMSE      R2   MAPE_%
+AdaBoost           1.6643  4.2474  2.0609  0.4657  51.9295
+Gradient Boosting  1.4968  3.5939  1.8958  0.5479  43.1945
+XGBoost            1.4728  3.5100  1.8735  0.5585  42.3212
+LightGBM           1.4651  3.4776  1.8648  0.5626  41.9810
+CatBoost           1.4664  3.4811  1.8658  0.5621  42.1150
+
+── Multiclase ──────────────────────────────────────────────────────────────────────
+                   Accuracy  Precision  Recall      F1
+AdaBoost             0.6093     0.6197  0.6148  0.6132
+Gradient Boosting    0.6383     0.6398  0.6430  0.6399
+XGBoost              0.6372     0.6386  0.6414  0.6389
+LightGBM             0.6389     0.6391  0.6429  0.6402
+CatBoost             0.6394     0.6405  0.6439  0.6409
+
+   MEJOR PREVIO (fases D a F)        MEJOR DE LA FASE G
+   AUC internet  0,8162 (RF)         CatBoost             0.8188
+   Recall mínimo 0,7498 (KNN)        LightGBM             0.7501
+   R² ieh        0,5441 (RF)         LightGBM             0.5626
+   F1 nivel      0,6363 (Stacking)   CatBoost             0.6409
+
+   [figura] figuras_v2\G08_comparacion_global.png
+
+
+[bitácora G-10] Cierre de la Fase G
+   ✔ Bitácora actualizada: BITACORA_PROYECTO.xlsx  (registro 42 · modelos 48)
+
+   Modelos entrenados: 15
+   Tiempo de la fase : 15.6 min
+   SIGUIENTE: FASE H · K-Fold, A/B testing entre modelos y ranking final
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+══════════════════════════════════════════════════════════════════════════════════════
+  FASE H · VALIDACIÓN CRUZADA Y SELECCIÓN FINAL
+══════════════════════════════════════════════════════════════════════════════════════
+   Registros para validación cruzada : 40,000
+   Proporción con internet           : 76.27 %
+   XGBoost True · LightGBM True · CatBoost True
+   [bitácora H-01] Muestra para validación cruzada
+
+══════════════════════════════════════════════════════════════════════════════════════
+  H1 · VISUALIZACIÓN DE LAS PARTICIONES
+══════════════════════════════════════════════════════════════════════════════════════
+   [figura] figuras_v2\H01_particiones.png
+
+Desviación entre particiones · KFold 0.6166 · StratifiedKFold 0.0068
+   La estratificación mantiene la proporción de clases casi idéntica
+   en las k particiones; sin ella, cada bloque puede desviarse.
+   [bitácora H-02] Elección del esquema de partición
+
+══════════════════════════════════════════════════════════════════════════════════════
+  H2 · ELECCIÓN DEL NÚMERO DE PARTICIONES
+══════════════════════════════════════════════════════════════════════════════════════
+   k =  2  AUC 0.8078 ± 0.0019  ·  entrena con 20,000  ·  2.3s
+   k =  3  AUC 0.8085 ± 0.0010  ·  entrena con 26,666  ·  2.6s
+   k =  5  AUC 0.8094 ± 0.0023  ·  entrena con 32,000  ·  4.5s
+   k = 10  AUC 0.8099 ± 0.0048  ·  entrena con 36,000  ·  8.9s
+
+   Ganancia de AUC al pasar de k=5 a k=10: +0.0005
+   Costo adicional: 2.0 veces más tiempo
+
+   SE ADOPTA k = 5: la media ya se estabilizó y el costo
+   sigue siendo razonable. Es además el valor estándar en la práctica.
+   [figura] figuras_v2\H02_eleccion_k.png
+
+
+══════════════════════════════════════════════════════════════════════════════════════
+  H3 · VALIDACIÓN CRUZADA — clasificación de internet
+══════════════════════════════════════════════════════════════════════════════════════
+   Regresión Logística    AUC 0.8069 ± 0.0025 · recall mín. 0.7128 · 5.1s
+   Random Forest          AUC 0.8098 ± 0.0023 · recall mín. 0.7273 · 9.0s
+   XGBoost                AUC 0.8048 ± 0.0019 · recall mín. 0.7022 · 9.0s
+   LightGBM               AUC 0.7997 ± 0.0026 · recall mín. 0.6839 · 11.9s
+   CatBoost               AUC 0.8096 ± 0.0025 · recall mín. 0.7212 · 24.3s
+
+── Resultados ──────────────────────────────────────────────────────────────────────
+                     AUC_medio  AUC_desv  PR_AUC      F1  Recall_min  Recall_min_desv
+Random Forest           0.8098    0.0023  0.9249  0.8181      0.7273           0.0038
+CatBoost                0.8096    0.0025  0.9244  0.8202      0.7212           0.0058
+Regresión Logística     0.8069    0.0025  0.9239  0.8229      0.7128           0.0053
+XGBoost                 0.8048    0.0019  0.9219  0.8232      0.7022           0.0062
+LightGBM                0.7997    0.0026  0.9189  0.8254      0.6839           0.0080
+
+   Mejor por AUC medio: Random Forest
+   Desviación entre particiones: ±0.0023
+   Una desviación pequeña indica que el resultado NO depende de la
+   partición: el modelo es estable.
+   [figura] figuras_v2\H03_cv_clasificacion.png
+
+══════════════════════════════════════════════════════════════════════════════════════
+  H4 · VALIDACIÓN CRUZADA — regresión del equipamiento
+══════════════════════════════════════════════════════════════════════════════════════
+   Ridge                  R² 0.5254 ± 0.0064 · RMSE 1.9469 · 1.8s
+   Random Forest          R² 0.5378 ± 0.0112 · RMSE 1.9213 · 24.9s
+   XGBoost                R² 0.5525 ± 0.0086 · RMSE 1.8905 · 9.3s
+   LightGBM               R² 0.5571 ± 0.0088 · RMSE 1.8807 · 6.2s
+   CatBoost               R² 0.5581 ± 0.0083 · RMSE 1.8788 · 20.7s
+
+── Resultados ──────────────────────────────────────────────────────────────────────
+               R2_medio  R2_desv    RMSE     MAE
+CatBoost         0.5581   0.0083  1.8788  1.4783
+LightGBM         0.5571   0.0088  1.8807  1.4760
+XGBoost          0.5525   0.0086  1.8905  1.4831
+Random Forest    0.5378   0.0112  1.9213  1.5112
+Ridge            0.5254   0.0064  1.9469  1.5428
+
+   Mejor por R² medio: CatBoost
+   [figura] figuras_v2\H04_cv_regresion.png
+
+══════════════════════════════════════════════════════════════════════════════════════
+  H5 · A/B TESTING ENTRE MODELOS
+══════════════════════════════════════════════════════════════════════════════════════
+
+── Prueba t pareada sobre las particiones ──────────────────────────────────────────
+   H0: los dos modelos tienen el mismo desempeño medio
+                     Random Forest  CatBoost  Regresión Logística  XGBoost  LightGBM
+Random Forest               1.0000    0.5285               0.0010   0.0052    0.0013
+CatBoost                    0.5285    1.0000               0.0009   0.0110    0.0025
+Regresión Logística         0.0010    0.0009               1.0000   0.1505    0.0092
+XGBoost                     0.0052    0.0110               0.1505   1.0000    0.0006
+LightGBM                    0.0013    0.0025               0.0092   0.0006    1.0000
+
+   Comparaciones con el mejor modelo:
+     Random Forest vs CatBoost               Δ +0.0002 · p = 0.5285 → indistinguible
+     Random Forest vs Regresión Logística    Δ +0.0029 · p = 0.0010 → DIFERENCIA REAL
+     Random Forest vs XGBoost                Δ +0.0050 · p = 0.0052 → DIFERENCIA REAL
+     Random Forest vs LightGBM               Δ +0.0101 · p = 0.0013 → DIFERENCIA REAL
+
+── Prueba de McNemar sobre el conjunto de prueba ───────────────────────────────────
+   Random Forest acierta y CatBoost falla : 277
+   Random Forest falla y CatBoost acierta : 238
+   Estadístico χ² = 2.8039 · valor p = 0.09404
+   → No hay evidencia de diferencia
+   [bitácora H-04] A/B testing entre modelos
+   [figura] figuras_v2\H05_ab_testing.png
+
+
+══════════════════════════════════════════════════════════════════════════════════════
+  H6 · RANKING FINAL CONSOLIDADO
+══════════════════════════════════════════════════════════════════════════════════════
+
+── Los 10 mejores por AUC en todo el proyecto (partición única) ────────────────────
+fase            modelo  ROC_AUC  Recall_min     F1
+   G          CatBoost   0.8188      0.7467 0.8184
+   G          LightGBM   0.8187      0.7501 0.8162
+   G           XGBoost   0.8182      0.7448 0.8186
+   G Gradient Boosting   0.8169      0.7470 0.8162
+   F     Random Forest   0.8162      0.7431 0.8180
+   F          Stacking   0.8149      0.7464 0.8171
+   F           Bagging   0.8146      0.7202 0.8272
+   F     Voting blando   0.8125      0.7376 0.8174
+   F       Extra Trees   0.8121      0.7398 0.8161
+   E        SVM lineal   0.8108      0.7219 0.8230
+
+── Los 10 mejores por R² en todo el proyecto ───────────────────────────────────────
+fase            modelo     R2   RMSE    MAE
+   G          LightGBM 0.5626 1.8648 1.4651
+   G          CatBoost 0.5621 1.8658 1.4664
+   G           XGBoost 0.5585 1.8735 1.4728
+   G Gradient Boosting 0.5479 1.8958 1.4968
+   F     Random Forest 0.5441 1.9038 1.5071
+   F          Stacking 0.5425 1.9071 1.5039
+   F           Bagging 0.5394 1.9135 1.5084
+   F            Voting 0.5366 1.9193 1.5156
+   E    SVR kernel RBF 0.5279 1.9374 1.5186
+   F       Extra Trees 0.5234 1.9465 1.5449
+
+── Veredicto con validación cruzada ────────────────────────────────────────────────
+   CLASIFICACIÓN · Random Forest
+     AUC 0.8098 ± 0.0023
+     Recall de la clase SIN internet: 0.7273
+
+   REGRESIÓN · CatBoost
+     R² 0.5581 ± 0.0083
+     RMSE 1.8788 bienes de 13
+   [figura] figuras_v2\H06_ranking_final.png
+
+
+[bitácora H-05] Cierre del proyecto de modelado
+   ✔ Bitácora actualizada (47 pasos · 58 modelos)
+
+   Tiempo de la fase: 6.4 min
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+══════════════════════════════════════════════════════════════════════════════════════
+  FASE I · CIERRE Y ENTREGABLES
+══════════════════════════════════════════════════════════════════════════════════════
+
+
+══════════════════════════════════════════════════════════════════════════════════════
+  I1 · CONSOLIDACIÓN DE MÉTRICAS
+══════════════════════════════════════════════════════════════════════════════════════
+   Registros de modelos en la bitácora : 58
+   Fases registradas                   : E, F, G, H
+
+── Modelos por fase y objetivo ─────────────────────────────────────────────────────
+objetivo  ieh  internet  nivel_equip
+fase                                
+E           3         5            5
+F           6         8            6
+G           5         5            5
+H           5         5            0
+
+── Clasificación binaria · ordenado por AUC ────────────────────────────────────────
+   fase                  modelo  Accuracy  Precision  Recall  Recall_min      F1  ROC_AUC  PR_AUC  segundos
+0     G                CatBoost    0.7471     0.9046  0.7473      0.7467  0.8184   0.8188  0.9291     67.00
+1     G                LightGBM    0.7448     0.9053  0.7432      0.7501  0.8162   0.8187  0.9296      1.72
+2     G                 XGBoost    0.7471     0.9040  0.7479      0.7448  0.8186   0.8182  0.9291      2.56
+3     G       Gradient Boosting    0.7445     0.9043  0.7437      0.7470  0.8162   0.8169  0.9288     21.59
+4     F           Random Forest    0.7463     0.9034  0.7473      0.7431  0.8180   0.8162  0.9286     15.22
+5     F                Stacking    0.7455     0.9043  0.7452      0.7464  0.8171   0.8149  0.9278     10.94
+6     F                 Bagging    0.7556     0.8980  0.7667      0.7202  0.8272   0.8146  0.9276     64.03
+7     F           Voting blando    0.7453     0.9016  0.7477      0.7376  0.8174   0.8125  0.9262      5.80
+8     F             Extra Trees    0.7438     0.9020  0.7451      0.7398  0.8161   0.8121  0.9269     16.81
+9     E              SVM lineal    0.7508     0.8978  0.7598      0.7219  0.8230   0.8108  0.9261      3.83
+10    F            Árbol · Gini    0.7444     0.8966  0.7515      0.7216  0.8177   0.8030  0.9191      2.27
+11    F        Árbol · Entropía    0.7424     0.8959  0.7494      0.7202  0.8161   0.8022  0.9193      0.73
+12    E  Naive Bayes categórico    0.7562     0.8878  0.7788      0.6835  0.8297   0.8017  0.9226      0.53
+13    E                     KNN    0.7223     0.9017  0.7137      0.7498  0.7968   0.7971  0.9149      5.22
+14    E          SVM kernel RBF    0.7458     0.8948  0.7556      0.7144  0.8193   0.7966  0.9158    123.41
+
+── Regresión · ordenado por R² ─────────────────────────────────────────────────────
+   fase              modelo     MAE    RMSE      R2   MAPE_%  segundos
+0     G            LightGBM  1.4651  1.8648  0.5626  41.9810      3.54
+1     G            CatBoost  1.4664  1.8658  0.5621  42.1150    118.61
+2     G             XGBoost  1.4728  1.8735  0.5585  42.3212      2.58
+3     G   Gradient Boosting  1.4968  1.8958  0.5479  43.1945     37.90
+4     F       Random Forest  1.5071  1.9038  0.5441  43.7878     10.58
+5     F            Stacking  1.5039  1.9071  0.5425  43.2211     14.22
+6     F             Bagging  1.5084  1.9135  0.5394  43.6533     12.86
+7     F              Voting  1.5156  1.9193  0.5366  43.8069      6.70
+8     E      SVR kernel RBF  1.5186  1.9374  0.5279  42.8441     54.30
+9     F         Extra Trees  1.5449  1.9465  0.5234  44.9274     11.63
+10    E          SVR lineal  1.5376  1.9519  0.5207  44.0765      8.05
+11    F  Árbol de regresión  1.5507  1.9678  0.5129  44.6922      1.38
+12    E       KNN regresión  1.5790  2.0100  0.4918  46.5362      5.23
+13    G            AdaBoost  1.6643  2.0609  0.4657  51.9295     46.05
+
+── Multiclase · ordenado por F1 macro ──────────────────────────────────────────────
+   fase             modelo  Accuracy  Precision  Recall      F1  segundos
+0     G           CatBoost    0.6394     0.6405  0.6439  0.6410    229.27
+1     G           LightGBM    0.6389     0.6391  0.6429  0.6402      5.34
+2     G  Gradient Boosting    0.6383     0.6398  0.6430  0.6399     54.91
+3     G            XGBoost    0.6372     0.6385  0.6414  0.6389      8.21
+4     F           Stacking    0.6355     0.6352  0.6404  0.6363     17.52
+5     F      Random Forest    0.6323     0.6318  0.6373  0.6330     14.25
+6     F             Voting    0.6308     0.6310  0.6362  0.6316      8.44
+7     F            Bagging    0.6305     0.6307  0.6353  0.6315     14.72
+8     E     SVM kernel RBF    0.6262     0.6268  0.6314  0.6276     65.80
+9     E         SVM lineal    0.6253     0.6230  0.6330  0.6240     10.95
+10    F        Extra Trees    0.6248     0.6217  0.6316  0.6234     16.34
+11    F  Árbol de decisión    0.6178     0.6186  0.6217  0.6190      3.38
+
+   Tablas completas guardadas en entregables/
+   [bitácora I-01] Consolidación de métricas
+
+
+══════════════════════════════════════════════════════════════════════════════════════
+  I2 · ENTRENAMIENTO DE LOS MODELOS FINALES
+══════════════════════════════════════════════════════════════════════════════════════
+   Dataset limpio        : 3,492,019 viviendas
+   Usado para el modelo  : 600,000 (17.2 %)
+   Entrenamiento / prueba: 480,000 / 120,000
+
+── Random Forest · acceso a internet ───────────────────────────────────────────────
+     Accuracy     0.7473
+     Precision    0.9056
+     Recall       0.7465
+     Recall_min   0.7500
+     F1           0.8184
+     ROC_AUC      0.8196
+     PR_AUC       0.9297
+     Entrenado en 58.1 s
+     Referencia con validación cruzada: AUC 0,8098 ± 0,0023
+
+── Regresión del equipamiento ──────────────────────────────────────────────────────
+     MAE          1.4634
+     MSE          3.4633
+     RMSE         1.8610
+     R2           0.5692
+     MAPE_%       42.4205
+     Entrenado en 39.8 s
+     Referencia con validación cruzada: R² 0,5581 ± 0,0083
+   [bitácora I-02] Entrenamiento de los modelos finales
+
+
+
+══════════════════════════════════════════════════════════════════════════════════════
+  I3 · ARTEFACTOS PARA MLOPS Y LA APLICACIÓN WEB
+══════════════════════════════════════════════════════════════════════════════════════
+   ✔ entregables\modelo_internet.joblib  (17.5 MB)
+   ✔ entregables\modelo_ieh.joblib  (0.2 MB)
+   ✔ entregables\metadata_modelos.json
+
+── Agregación territorial ──────────────────────────────────────────────────────────
+ idep  viviendas  internet_real  internet_predicho  ieh_real  ieh_predicho  hacin_critico  sin_servicios  pct_rural departamento  brecha_prediccion
+  5.0     291105          67.17              45.20     3.759         3.791          13.32          49.86  58.650002       Potosí             -21.97
+  8.0     118782          71.04              52.14     4.364         4.393          18.66          39.29  29.200001         Beni             -18.90
+  2.0    1039341          72.01              54.10     4.647         4.649          10.07          29.45  37.410000       La Paz             -17.91
+  9.0      33214          72.56              49.82     4.516         4.478          18.44          41.50  44.660000        Pando             -22.74
+  1.0     177922          75.48              55.10     4.462         4.483          13.85          32.16  43.730000   Chuquisaca             -20.38
+  4.0     185618          75.65              55.50     4.862         4.847          14.23          38.52  39.330002        Oruro             -20.15
+  3.0     654331          78.99              59.87     5.034         5.032           9.13          33.33  34.020000   Cochabamba             -19.12
+  7.0     836363          82.45              66.85     5.622         5.607          14.07           9.48  17.879999       Tarija             -15.60
+  6.0     155343          83.57              65.27     5.436         5.428          10.63          13.31  30.830000   Santa Cruz             -18.30
+
+   ✔ entregables\indicadores_por_departamento.csv
+
+   NOTA PARA EL MAPA MUNICIPAL
+   El dataset limpio conserva solo el departamento (idep). Para llegar
+   al nivel municipal hay que releer el archivo original y conservar
+   iprov e imun, construyendo el código de municipio con:
+     cod_mun = idep(2) + iprov(2) + imun(2)
+   Es un paso de integración, no de modelado.
+   [bitácora I-03] Exportación de artefactos
+
+
+
+
+
+══════════════════════════════════════════════════════════════════════════════════════
+  I4 · FIGURA RESUMEN
+══════════════════════════════════════════════════════════════════════════════════════
+   [figura] figuras_v2\I01_resumen_proyecto.png
+
+
+══════════════════════════════════════════════════════════════════════════════════════
+  I5 · INFORME DE MÉTRICAS
+══════════════════════════════════════════════════════════════════════════════════════
+   ✔ entregables\INFORME_METRICAS.txt  (67 líneas)
+   [bitácora I-04] Informe de métricas
+   ✔ Bitácora final: 51 pasos · 58 modelos · 2 hojas de ranking añadidas
+
+   ENTREGABLES EN LA CARPETA entregables/
+     modelo_internet.joblib              modelo de clasificación
+     modelo_ieh.joblib                   modelo de regresión
+     metadata_modelos.json               configuración y métricas
+     indicadores_por_departamento.csv    insumo del mapa
+     INFORME_METRICAS.txt                anexo del informe
+     I_todas_metricas_*.csv              tablas completas
+
+   Tiempo de la fase: 3.3 min
+   SIGUIENTE: integración territorial, versionado y aplicación web
+
+
+
+
+
+
+

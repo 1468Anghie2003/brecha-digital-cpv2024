@@ -1,6 +1,8 @@
 # ---------------------------------------------------------------------------
 #  Dependencias de la aplicacion web del proyecto CPV 2024
-#  Instalacion:   pip install -r requirements.txt
+#  Las versiones de las librerias de modelos estan fijadas porque los
+#  modelos serializados deben cargarse con la misma version con que
+#  fueron entrenados.
 # ---------------------------------------------------------------------------
 
 # Interfaz y graficos
@@ -14,9 +16,9 @@ pyarrow>=14.0
 
 # Carga de los modelos entrenados
 joblib>=1.3
-scikit-learn>=1.4
+scikit-learn==1.9.0
 
 # Librerias requeridas por los modelos serializados
-xgboost>=2.0
-lightgbm>=4.0
+xgboost==3.4.1
+lightgbm==4.7.0
 catboost>=1.2

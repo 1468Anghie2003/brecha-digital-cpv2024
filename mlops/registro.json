@@ -1,0 +1,354 @@
+{
+  "generado": "2026-10-02 09:19",
+  "semilla": 42,
+  "versiones": {
+    "v1.0": {
+      "n_total": 80000,
+      "n_entrenamiento": 60000,
+      "n_prueba": 20000,
+      "clasificacion": {
+        "Regresión Logística": {
+          "metricas": {
+            "Accuracy": 0.742,
+            "Precision": 0.89374,
+            "Recall": 0.75102,
+            "Recall_min": 0.71302,
+            "F1": 0.81619,
+            "ROC_AUC": 0.79937,
+            "PR_AUC": 0.9199
+          },
+          "segundos": 2.51
+        },
+        "Random Forest": {
+          "metricas": {
+            "Accuracy": 0.7376,
+            "Precision": 0.89896,
+            "Recall": 0.73902,
+            "Recall_min": 0.73304,
+            "F1": 0.81118,
+            "ROC_AUC": 0.80574,
+            "PR_AUC": 0.92297
+          },
+          "segundos": 4.11
+        },
+        "XGBoost": {
+          "metricas": {
+            "Accuracy": 0.79845,
+            "Precision": 0.83664,
+            "Recall": 0.91425,
+            "Recall_min": 0.42625,
+            "F1": 0.87373,
+            "ROC_AUC": 0.80545,
+            "PR_AUC": 0.9225
+          },
+          "segundos": 3.64
+        },
+        "LightGBM": {
+          "metricas": {
+            "Accuracy": 0.7437,
+            "Precision": 0.89372,
+            "Recall": 0.75357,
+            "Recall_min": 0.71197,
+            "F1": 0.81768,
+            "ROC_AUC": 0.80291,
+            "PR_AUC": 0.92117
+          },
+          "segundos": 2.62
+        },
+        "CatBoost": {
+          "metricas": {
+            "Accuracy": 0.73695,
+            "Precision": 0.89975,
+            "Recall": 0.73725,
+            "Recall_min": 0.73599,
+            "F1": 0.81043,
+            "ROC_AUC": 0.80803,
+            "PR_AUC": 0.9238
+          },
+          "segundos": 5.16
+        }
+      },
+      "regresion": {
+        "Ridge": {
+          "metricas": {
+            "MAE": 1.54416,
+            "MSE": 3.78064,
+            "RMSE": 1.94439,
+            "R2": 0.52901,
+            "MAPE": 45.25107
+          },
+          "segundos": 0.89
+        },
+        "Random Forest": {
+          "metricas": {
+            "MAE": 1.50997,
+            "MSE": 3.65701,
+            "RMSE": 1.91233,
+            "R2": 0.54442,
+            "MAPE": 43.91285
+          },
+          "segundos": 12.06
+        },
+        "XGBoost": {
+          "metricas": {
+            "MAE": 1.47306,
+            "MSE": 3.49965,
+            "RMSE": 1.87073,
+            "R2": 0.56402,
+            "MAPE": 42.75825
+          },
+          "segundos": 3.14
+        },
+        "LightGBM": {
+          "metricas": {
+            "MAE": 1.47184,
+            "MSE": 3.48743,
+            "RMSE": 1.86747,
+            "R2": 0.56554,
+            "MAPE": 42.56326
+          },
+          "segundos": 2.51
+        },
+        "CatBoost": {
+          "metricas": {
+            "MAE": 1.48137,
+            "MSE": 3.50778,
+            "RMSE": 1.87291,
+            "R2": 0.56301,
+            "MAPE": 42.91034
+          },
+          "segundos": 2.47
+        }
+      }
+    },
+    "v2.0": {
+      "n_total": 200000,
+      "n_entrenamiento": 150000,
+      "n_prueba": 50000,
+      "clasificacion": {
+        "Regresión Logística": {
+          "metricas": {
+            "Accuracy": 0.74896,
+            "Precision": 0.89791,
+            "Recall": 0.75692,
+            "Recall_min": 0.72339,
+            "F1": 0.82141,
+            "ROC_AUC": 0.80906,
+            "PR_AUC": 0.9259
+          },
+          "segundos": 4.78
+        },
+        "Random Forest": {
+          "metricas": {
+            "Accuracy": 0.74212,
+            "Precision": 0.90309,
+            "Recall": 0.74144,
+            "Recall_min": 0.74429,
+            "F1": 0.81433,
+            "ROC_AUC": 0.81488,
+            "PR_AUC": 0.92877
+          },
+          "segundos": 9.02
+        },
+        "XGBoost": {
+          "metricas": {
+            "Accuracy": 0.80496,
+            "Precision": 0.84148,
+            "Recall": 0.91703,
+            "Recall_min": 0.44475,
+            "F1": 0.87763,
+            "ROC_AUC": 0.81712,
+            "PR_AUC": 0.9298
+          },
+          "segundos": 3.32
+        },
+        "LightGBM": {
+          "metricas": {
+            "Accuracy": 0.74782,
+            "Precision": 0.90193,
+            "Recall": 0.75102,
+            "Recall_min": 0.73755,
+            "F1": 0.81959,
+            "ROC_AUC": 0.8156,
+            "PR_AUC": 0.92892
+          },
+          "segundos": 2.67
+        },
+        "CatBoost": {
+          "metricas": {
+            "Accuracy": 0.74308,
+            "Precision": 0.90456,
+            "Recall": 0.74137,
+            "Recall_min": 0.74859,
+            "F1": 0.81487,
+            "ROC_AUC": 0.81669,
+            "PR_AUC": 0.92943
+          },
+          "segundos": 4.73
+        }
+      },
+      "regresion": {
+        "Ridge": {
+          "metricas": {
+            "MAE": 1.54132,
+            "MSE": 3.7785,
+            "RMSE": 1.94384,
+            "R2": 0.53269,
+            "MAPE": 45.08038
+          },
+          "segundos": 0.99
+        },
+        "Random Forest": {
+          "metricas": {
+            "MAE": 1.50314,
+            "MSE": 3.63721,
+            "RMSE": 1.90715,
+            "R2": 0.55017,
+            "MAPE": 43.73399
+          },
+          "segundos": 29.54
+        },
+        "XGBoost": {
+          "metricas": {
+            "MAE": 1.4674,
+            "MSE": 3.47882,
+            "RMSE": 1.86516,
+            "R2": 0.56976,
+            "MAPE": 42.42999
+          },
+          "segundos": 3.1
+        },
+        "LightGBM": {
+          "metricas": {
+            "MAE": 1.46829,
+            "MSE": 3.48011,
+            "RMSE": 1.86551,
+            "R2": 0.5696,
+            "MAPE": 42.48381
+          },
+          "segundos": 2.86
+        },
+        "CatBoost": {
+          "metricas": {
+            "MAE": 1.47913,
+            "MSE": 3.51501,
+            "RMSE": 1.87484,
+            "R2": 0.56528,
+            "MAPE": 42.83515
+          },
+          "segundos": 5.28
+        }
+      }
+    }
+  },
+  "deriva": {
+    "auc_entrenamiento": 0.8428,
+    "auc_no_visto": 0.7892,
+    "caida": 0.0536,
+    "departamentos_entrenamiento": [
+      "La Paz",
+      "Cochabamba",
+      "Santa Cruz"
+    ]
+  },
+  "extra": {
+    "hacin_critico": {
+      "descripcion": "Hacinamiento crítico (>3 personas por dormitorio)",
+      "prevalencia": 12.04,
+      "metricas": {
+        "Accuracy": 0.71523,
+        "Recall_min": 0.69662,
+        "F1": 0.41849,
+        "ROC_AUC": 0.85256
+      },
+      "segundos": 3.16,
+      "excluidas": [
+        "hacin_critico",
+        "hacinamiento",
+        "pers_por_habitac",
+        "tot_pers",
+        "v14_dormit",
+        "v13_habitac"
+      ],
+      "n_predictoras": 22,
+      "importancias": {
+        "tip_hog": 0.65734,
+        "v15_servsan": 0.04793,
+        "v10_combus": 0.04055,
+        "v17_tenencia": 0.03879,
+        "v08_aguadist": 0.03093,
+        "v06_piso": 0.02778,
+        "v11_basura": 0.02774,
+        "v16_desague": 0.02212,
+        "v12_cocina": 0.02097,
+        "idep": 0.01747,
+        "v04_revoq": 0.01645,
+        "urbrur": 0.00955
+      }
+    },
+    "sin_servicios": {
+      "descripcion": "Carencia de agua, energía o saneamiento",
+      "prevalencia": 27.52,
+      "metricas": {
+        "Accuracy": 0.83623,
+        "Recall_min": 0.84185,
+        "F1": 0.73407,
+        "ROC_AUC": 0.91474
+      },
+      "segundos": 4.23,
+      "excluidas": [
+        "sin_servicios",
+        "v07_aguapro",
+        "v09_energia",
+        "v15_servsan",
+        "v16_desague",
+        "v08_aguadist"
+      ],
+      "n_predictoras": 22,
+      "importancias": {
+        "v11_basura": 0.22468,
+        "urbrur": 0.17322,
+        "v10_combus": 0.1476,
+        "v06_piso": 0.1047,
+        "v03_pared": 0.08152,
+        "v04_revoq": 0.05662,
+        "idep": 0.0533,
+        "v14_dormit": 0.03816,
+        "v13_habitac": 0.02517,
+        "v12_cocina": 0.02172,
+        "v17_tenencia": 0.02137,
+        "v05_techo": 0.01986
+      }
+    }
+  },
+  "valores_tipicos": {
+    "urbrur": 1.0,
+    "idep": 2.0,
+    "v01_tipoviv": 1.0,
+    "v03_pared": 1.0,
+    "v04_revoq": 1.0,
+    "v05_techo": 1.0,
+    "v06_piso": 5.0,
+    "v07_aguapro": 1.0,
+    "v08_aguadist": 1.0,
+    "v09_energia": 1.0,
+    "v10_combus": 1.0,
+    "v11_basura": 2.0,
+    "v12_cocina": 1.0,
+    "v15_servsan": 1.0,
+    "v16_desague": 1.0,
+    "v17_tenencia": 1.0,
+    "tip_hog": 1.0,
+    "v20a_emi": 2.0,
+    "v21a_fal": 2.0,
+    "v13_habitac": 2.0,
+    "v14_dormit": 2.0,
+    "tot_pers": 3.0,
+    "v20b_totemi": 0.0,
+    "v21b_totfal": 0.0,
+    "hacinamiento": 1.5,
+    "pers_por_habitac": 1.0,
+    "hacin_critico": 0.0,
+    "sin_servicios": 0.0
+  }
+}
